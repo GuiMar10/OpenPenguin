@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://dubfc0hofk66x"]
+
+[ext_resource type="Script" path="res://minigames/astro barrier/objects/astrobarrierblock.gd" id="1_femap"]
+[ext_resource type="Texture2D" uid="uid://dwpfpal0ceukm" path="res://minigames/astro barrier/assets/shapes/80.png" id="2_qnuhe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hymjf"]
+size = Vector2(129, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xggek"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_qnuhe")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="astrobarrierblock" type="Area2D"]
+script = ExtResource("1_femap")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_hymjf")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_xggek")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

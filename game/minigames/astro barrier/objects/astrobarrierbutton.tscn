@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://3sr705awcx3s"]
+
+[ext_resource type="Script" path="res://minigames/astro barrier/objects/astrobarrierbutton.gd" id="1_6ktyk"]
+
+[node name="astrobarrierbutton" type="Button"]
+offset_left = 148.0
+offset_top = 62.0
+offset_right = 235.0
+offset_bottom = 142.0
+script = ExtResource("1_6ktyk")

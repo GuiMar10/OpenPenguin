@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://d3rlsoe8pvkb6"]
+
+[ext_resource type="Script" path="res://minigames/astro barrier/objects/astrobarrierbullet.gd" id="1_ql7uo"]
+[ext_resource type="Texture2D" uid="uid://nyrwh0s1r30r" path="res://minigames/astro barrier/assets/shapes/60.png" id="2_1ormp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qec20"]
+size = Vector2(23, 47)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_djdet"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_1ormp")
+}],
+"loop": true,
+"name": &"bullet",
+"speed": 5.0
+}]
+
+[node name="astrobarrierbullet2" type="Area2D"]
+script = ExtResource("1_ql7uo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_qec20")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_djdet")
+animation = &"bullet"

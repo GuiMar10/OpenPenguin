@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://ddhrheji4qsug"]
+
+[ext_resource type="Script" path="res://minigames/astro barrier/objects/astrobarriercollision.gd" id="1_n44o4"]
+[ext_resource type="Texture2D" uid="uid://nyrwh0s1r30r" path="res://minigames/astro barrier/assets/shapes/60.png" id="2_dar2r"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_khckm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_dar2r")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_es025"]
+size = Vector2(24, 234)
+
+[node name="astrobarriercollision" type="CharacterBody2D"]
+script = ExtResource("1_n44o4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1, 4.72449)
+sprite_frames = SubResource("SpriteFrames_khckm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -4)
+shape = SubResource("RectangleShape2D_es025")

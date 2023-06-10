@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://ckr676gp646da"]
+
+[ext_resource type="Script" path="res://minigames/astro barrier/objects/astrobarrierbullet.gd" id="1_ugfxx"]
+[ext_resource type="Texture2D" uid="uid://nyrwh0s1r30r" path="res://minigames/astro barrier/assets/shapes/60.png" id="2_rermh"]
+[ext_resource type="AudioStream" uid="uid://tigdprwnaao3" path="res://minigames/astro barrier/assets/sounds/5_sound_shoot.mp3" id="3_w2djr"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4do56"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_rermh")
+}],
+"loop": true,
+"name": &"astrobullet",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ma65a"]
+size = Vector2(17, 35)
+
+[node name="astrobarrierbullet" type="CharacterBody2D"]
+script = ExtResource("1_ugfxx")
+
+[node name="astrobarrierbulletsprite" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.396, 0.396)
+sprite_frames = SubResource("SpriteFrames_4do56")
+animation = &"astrobullet"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.215, 0)
+scale = Vector2(0.577, 0.577)
+shape = SubResource("RectangleShape2D_ma65a")
+
+[node name="sndshoot" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_w2djr")
+autoplay = true
