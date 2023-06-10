@@ -6,16 +6,27 @@ var astrobarriertiros = 8
 var shooted = 0
 var lives = 2
 var points = 0
+var level = 1
 
 func _physics_process(delta):
-	if shooted == 4 and get_tree().get_current_scene().name == "astrogame1":
-		get_tree().change_scene_to_file("res://minigames/astro barrier/scenes/astrogame2.tscn")
+	if shooted == 4 and level == 1:
 		shooted = 0
+		get_tree().change_scene_to_file("res://minigames/astro barrier/scenes/astrogame2.tscn")
+		level = 2
+		astrobarriertiros = 7
+	
+	if shooted == 1 and level == 2:
+		shooted = 0
+		get_tree().change_scene_to_file("res://minigames/astro barrier/scenes/astrogame3.tscn")
+		level = 3
 		astrobarriertiros = 7
 	
 	if astrobarriertiros <= 0 and lives >= 0:
 		lives -= 1
-		astrobarriertiros = 5
+		if level == 1:
+			astrobarriertiros = 8
+		elif level == 2 or level == 3:
+			astrobarriertiros = 7
 		shooted = 0
 		get_tree().reload_current_scene()
 	

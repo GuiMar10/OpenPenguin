@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://gbevuigg6v3k"]
+[gd_scene load_steps=15 format=3 uid="uid://gbevuigg6v3k"]
 
 [ext_resource type="PackedScene" uid="uid://dkr37jheu3wbl" path="res://minigames/astro barrier/objects/astrobarrierplayer.tscn" id="1_i5hax"]
 [ext_resource type="Texture2D" uid="uid://biuee6nlmpwun" path="res://minigames/astro barrier/assets/shapes/13.png" id="1_s03cy"]
@@ -13,6 +13,7 @@
 [ext_resource type="FontFile" uid="uid://72d6g0d5a7hf" path="res://minigames/astro barrier/assets/fonts/27_cpBurbankSmallBold.ttf" id="11_tincx"]
 [ext_resource type="Script" path="res://minigames/astro barrier/objects/astrolives.gd" id="12_oxuc1"]
 [ext_resource type="Script" path="res://minigames/astro barrier/objects/astropoints.gd" id="13_87x36"]
+[ext_resource type="Script" path="res://minigames/astro barrier/objects/astroshoots.gd" id="14_rpugq"]
 
 [node name="astrogame1" type="Node2D"]
 
@@ -163,3 +164,15 @@ theme_override_font_sizes/font_size = 22
 text = "0"
 horizontal_alignment = 2
 script = ExtResource("13_87x36")
+
+[node name="astroshoots" type="Label" parent="."]
+z_index = 3
+offset_left = 313.0
+offset_top = 474.0
+offset_right = 384.0
+offset_bottom = 506.0
+theme_override_colors/font_color = Color(0.976471, 0.968627, 0.00784314, 1)
+theme_override_fonts/font = ExtResource("11_tincx")
+theme_override_font_sizes/font_size = 22
+text = "0"
+script = ExtResource("14_rpugq")

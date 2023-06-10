@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Club Penguin New Island"
-run/main_scene="res://minigames/astro barrier/scenes/astrogame1.tscn"
+run/main_scene="res://minigames/astro barrier/scenes/astrogamestart.tscn"
 config/features=PackedStringArray("4.0", "GL Compatibility")
 config/icon="res://icon.svg"
 

@@ -5,13 +5,5 @@ extends Button
 func _ready():
 	pass # Replace with function body.
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
-func _on_Button_mouse_entered():
-	Input.set_default_cursor_shape(Input.CURSOR_POINTING_HAND)
-
-func _on_Button_mouse_exited():
-	Input.set_default_cursor_shape(Input.CURSOR_ARROW)
+func _on_pressed():
+	get_tree().change_scene_to_file("res://minigames/astro barrier/scenes/astrogamestart2.tscn")
