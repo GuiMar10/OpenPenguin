@@ -1,0 +1,127 @@
+[gd_scene load_steps=21 format=3 uid="uid://ch48idt0e0s8b"]
+
+[ext_resource type="Script" path="res://rooms/town/objects/towndanceclubbutton.gd" id="1_qa0ye"]
+[ext_resource type="Texture2D" uid="uid://co7yvn4434ix2" path="res://rooms/town/assets/sprites/DefineSprite_271/1.png" id="2_t6n2r"]
+[ext_resource type="Texture2D" uid="uid://cbtcd5lk5hhup" path="res://rooms/town/assets/sprites/DefineSprite_271/7.png" id="3_pwoq4"]
+[ext_resource type="Texture2D" uid="uid://dp0ewiifhabrq" path="res://rooms/town/assets/sprites/DefineSprite_271/8.png" id="4_0c6wb"]
+[ext_resource type="Texture2D" uid="uid://dnnivdvorq5fa" path="res://rooms/town/assets/sprites/DefineSprite_271/9.png" id="5_g03dm"]
+[ext_resource type="Texture2D" uid="uid://baog2bn6wiu63" path="res://rooms/town/assets/sprites/DefineSprite_271/10.png" id="6_bwqkk"]
+[ext_resource type="Texture2D" uid="uid://dyxbeq6ox3ew5" path="res://rooms/town/assets/sprites/DefineSprite_271/11.png" id="7_a4lb0"]
+[ext_resource type="Texture2D" uid="uid://vakq4i87mcyo" path="res://rooms/town/assets/sprites/DefineSprite_271/12.png" id="8_udags"]
+[ext_resource type="Texture2D" uid="uid://c0ot7gucyjaqx" path="res://rooms/town/assets/sprites/DefineSprite_271/13.png" id="9_2ns7i"]
+[ext_resource type="Texture2D" uid="uid://c8p1f0iyulbwl" path="res://rooms/town/assets/sprites/DefineSprite_271/14.png" id="10_3p2ci"]
+[ext_resource type="Texture2D" uid="uid://dxgxo5siomyci" path="res://rooms/town/assets/sprites/DefineSprite_271/15.png" id="11_850xh"]
+[ext_resource type="Texture2D" uid="uid://cmgjseny3n3uo" path="res://rooms/town/assets/sprites/DefineSprite_271/16.png" id="12_ukoe0"]
+[ext_resource type="Texture2D" uid="uid://btolaeydl2ow4" path="res://rooms/town/assets/sprites/DefineSprite_271/2.png" id="13_ninp5"]
+[ext_resource type="Texture2D" uid="uid://b2qu45nfx7auo" path="res://rooms/town/assets/sprites/DefineSprite_271/3.png" id="14_88ofq"]
+[ext_resource type="Texture2D" uid="uid://debdf0v212lha" path="res://rooms/town/assets/sprites/DefineSprite_271/4.png" id="15_psdqn"]
+[ext_resource type="Texture2D" uid="uid://c31hi11ul8ule" path="res://rooms/town/assets/sprites/DefineSprite_271/5.png" id="16_ctpqr"]
+[ext_resource type="Texture2D" uid="uid://dp6c0bvngao62" path="res://rooms/town/assets/sprites/DefineSprite_271/6.png" id="17_pswh5"]
+[ext_resource type="AudioStream" uid="uid://bitbyxn5br5i3" path="res://rooms/town/assets/sounds/269.mp3" id="18_3o8il"]
+[ext_resource type="AudioStream" uid="uid://bpaql23kqwook" path="res://rooms/town/assets/sounds/270.mp3" id="19_uyn0o"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u5nj0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_t6n2r")
+}],
+"loop": true,
+"name": &"closed",
+"speed": 18.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_pwoq4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0c6wb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_g03dm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_bwqkk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_a4lb0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_udags")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_2ns7i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_3p2ci")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_850xh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ukoe0")
+}],
+"loop": false,
+"name": &"closing",
+"speed": 25.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_pwoq4")
+}],
+"loop": true,
+"name": &"opened",
+"speed": 18.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_t6n2r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ninp5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_88ofq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_psdqn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ctpqr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_pswh5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_pwoq4")
+}],
+"loop": false,
+"name": &"opening",
+"speed": 25.0
+}]
+
+[node name="towndanceclubbutton" type="Button"]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 1.0
+offset_top = -17.0
+offset_right = 70.0
+offset_bottom = 75.0
+mouse_default_cursor_shape = 2
+script = ExtResource("1_qa0ye")
+
+[node name="danceclubbuttonsprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(32, 9)
+scale = Vector2(0.859, 0.859)
+sprite_frames = SubResource("SpriteFrames_u5nj0")
+animation = &"closing"
+frame = 9
+frame_progress = 1.0
+
+[node name="open" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("18_3o8il")
+
+[node name="close" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("19_uyn0o")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

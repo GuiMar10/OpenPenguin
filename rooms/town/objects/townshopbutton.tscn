@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://2rjgeh873drr"]
+
+[ext_resource type="Texture2D" uid="uid://csb4ndpxsv0ut" path="res://rooms/town/assets/sprites/DefineSprite_238/1.png" id="1_aqdp4"]
+[ext_resource type="Script" path="res://rooms/town/objects/townshopbutton.gd" id="1_xvqbs"]
+[ext_resource type="Texture2D" uid="uid://bfx7s4ciogsqk" path="res://rooms/town/assets/sprites/DefineSprite_238/2.png" id="2_mrk2n"]
+[ext_resource type="AudioStream" uid="uid://dwqlddawjntg8" path="res://rooms/town/assets/sounds/1_sfx_DoorShopOpen.mp3" id="4_ro7y0"]
+[ext_resource type="AudioStream" uid="uid://ciols386sd82n" path="res://rooms/town/assets/sounds/2_sfx_DoorShopClose.mp3" id="5_b71xv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r54x7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_aqdp4")
+}],
+"loop": true,
+"name": &"closed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_mrk2n")
+}],
+"loop": true,
+"name": &"opened",
+"speed": 5.0
+}]
+
+[node name="townshopbutton" type="Button"]
+self_modulate = Color(1, 1, 1, 0)
+offset_right = 75.0
+offset_bottom = 134.0
+mouse_default_cursor_shape = 2
+script = ExtResource("1_xvqbs")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(38, 79)
+sprite_frames = SubResource("SpriteFrames_r54x7")
+animation = &"closed"
+
+[node name="open" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_ro7y0")
+
+[node name="close" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_b71xv")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
