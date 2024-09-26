@@ -93,7 +93,7 @@ offset_right = 510.0
 offset_bottom = 98.0
 theme_override_fonts/font = ExtResource("11_3r2dq")
 theme_override_font_sizes/font_size = 27
-text = "astrobarriertitle"
+text = "astrobarrier"
 
 [node name="astrotextlevel" type="Label" parent="."]
 z_index = 3

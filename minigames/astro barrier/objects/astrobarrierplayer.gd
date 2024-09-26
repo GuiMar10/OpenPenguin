@@ -8,7 +8,7 @@ var lives = 2
 var points = 0
 var level = 1
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if shooted == 4 and level == 1:
 		shooted = 0
 		get_tree().change_scene_to_file("res://minigames/astro barrier/scenes/astrogame2.tscn")

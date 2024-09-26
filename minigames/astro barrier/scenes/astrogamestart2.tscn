@@ -64,7 +64,7 @@ offset_right = 571.0
 offset_bottom = 97.0
 theme_override_fonts/font = ExtResource("8_b8pyl")
 theme_override_font_sizes/font_size = 27
-text = "astrobarriertitle"
+text = "astrobarrier"
 horizontal_alignment = 1
 
 [node name="astrobarriertutorial1label4" type="Label" parent="."]
