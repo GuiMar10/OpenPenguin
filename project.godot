@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="OpenPenguin"
-run/main_scene="res://minigames/astro barrier/scenes/astrogamestart.tscn"
+run/main_scene="res://rooms/town/towncenter.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 

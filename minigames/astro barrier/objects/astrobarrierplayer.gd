@@ -7,25 +7,14 @@ var shooted = 0
 var lives = 2
 var points = 0
 var level = 1
+var levelData = [{"shoots": 4}, {"shoots": 1}, {"shoots": 3}, {"shoots": 4}]
 
 func _physics_process(_delta):
-	if shooted == 4 and level == 1:
+	if shooted == levelData[level - 1]["shoots"]:
 		shooted = 0
-		get_tree().change_scene_to_file("res://minigames/astro barrier/scenes/astrogame2.tscn")
-		level = 2
+		get_tree().change_scene_to_file("res://minigames/astro barrier/scenes/astrogame" + str(level + 1) + ".tscn")
+		level += 1
 		astrobarriertiros = 7
-	
-	if shooted == 1 and level == 2:
-		shooted = 0
-		get_tree().change_scene_to_file("res://minigames/astro barrier/scenes/astrogame3.tscn")
-		level = 3
-		astrobarriertiros = 7
-	
-	if shooted == 3 and level == 3:
-		shooted = 0
-		get_tree().change_scene_to_file("res://minigames/astro barrier/scenes/astrogame4.tscn")
-		level = 4
-		astrobarriertiros = 9
 	
 	if astrobarriertiros <= 0 and lives >= 0:
 		lives -= 1
