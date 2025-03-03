@@ -1,33 +1,16 @@
-[gd_scene load_steps=17 format=3 uid="uid://311a4hk77k4"]
+[gd_scene load_steps=8 format=3 uid="uid://311a4hk77k4"]
 
-[ext_resource type="Texture2D" uid="uid://biuee6nlmpwun" path="res://minigames/astro barrier/assets/shapes/13.png" id="1_q1smx"]
-[ext_resource type="Texture2D" uid="uid://1n7hvsme7hvu" path="res://minigames/astro barrier/assets/shapes/14.png" id="2_3q3ap"]
+[ext_resource type="PackedScene" uid="uid://k1v6cv4en1ab" path="res://minigames/astro barrier/scenes/background.tscn" id="1_oi6mc"]
 [ext_resource type="PackedScene" uid="uid://dkr37jheu3wbl" path="res://minigames/astro barrier/objects/astrobarrierplayer.tscn" id="3_jv5j3"]
 [ext_resource type="Texture2D" uid="uid://bk06gimbrkp1d" path="res://minigames/astro barrier/assets/shapes/31.png" id="4_ydq6h"]
-[ext_resource type="Texture2D" uid="uid://iawvu5da5stn" path="res://minigames/astro barrier/assets/shapes/55.png" id="5_2soh6"]
-[ext_resource type="Texture2D" uid="uid://sandumhmdhx5" path="res://minigames/astro barrier/assets/shapes/15.png" id="6_lyhno"]
 [ext_resource type="PackedScene" uid="uid://ddhrheji4qsug" path="res://minigames/astro barrier/objects/astrobarriercollision.tscn" id="7_gbpxe"]
 [ext_resource type="PackedScene" uid="uid://dx6rdux1np8m4" path="res://minigames/astro barrier/objects/astrobarrieralvo.tscn" id="8_dsubi"]
-[ext_resource type="Texture2D" uid="uid://ds82nqbvs0fv4" path="res://minigames/astro barrier/assets/shapes/20.png" id="9_3j4fj"]
-[ext_resource type="Texture2D" uid="uid://brdv3xy6dt021" path="res://minigames/astro barrier/assets/shapes/21.png" id="10_yl4sg"]
-[ext_resource type="FontFile" uid="uid://72d6g0d5a7hf" path="res://minigames/astro barrier/assets/fonts/27_cpBurbankSmallBold.ttf" id="11_3r2dq"]
-[ext_resource type="Script" path="res://minigames/astro barrier/objects/astrolives.gd" id="12_1q0ww"]
-[ext_resource type="Script" path="res://minigames/astro barrier/objects/astropoints.gd" id="13_dhcgj"]
 [ext_resource type="PackedScene" uid="uid://bwhx0bmop2vv7" path="res://minigames/astro barrier/objects/astrobarrieralvo2.tscn" id="14_vc7ay"]
 [ext_resource type="PackedScene" uid="uid://bekjrr5m64ens" path="res://minigames/astro barrier/objects/astrobarrieralvo3.tscn" id="15_4bhqc"]
-[ext_resource type="Script" path="res://minigames/astro barrier/objects/astroshoots.gd" id="16_dt4b2"]
 
 [node name="astrogame1" type="Node2D"]
 
-[node name="background" type="Sprite2D" parent="."]
-position = Vector2(454, 285)
-scale = Vector2(0.589, 0.589)
-texture = ExtResource("1_q1smx")
-
-[node name="arcademachine3" type="Sprite2D" parent="."]
-position = Vector2(479, 292)
-scale = Vector2(0.548, 0.548)
-texture = ExtResource("2_3q3ap")
+[node name="Background" parent="." instance=ExtResource("1_oi6mc")]
 
 [node name="astrobarrierplayer" parent="." instance=ExtResource("3_jv5j3")]
 position = Vector2(467, 435)
@@ -49,18 +32,6 @@ position = Vector2(471, 254.091)
 scale = Vector2(0.415, 0.415)
 texture = ExtResource("4_ydq6h")
 
-[node name="arcademachine2" type="Sprite2D" parent="."]
-z_index = 1
-position = Vector2(465, 281)
-scale = Vector2(0.423, 0.423)
-texture = ExtResource("5_2soh6")
-
-[node name="arcademachine" type="Sprite2D" parent="."]
-z_index = 2
-position = Vector2(476, 282)
-scale = Vector2(0.597, 0.597)
-texture = ExtResource("6_lyhno")
-
 [node name="astrobarriercollision" parent="." instance=ExtResource("7_gbpxe")]
 visible = false
 position = Vector2(307, 463)
@@ -73,83 +44,6 @@ position = Vector2(637, 460)
 position = Vector2(518, 211)
 scale = Vector2(0.869, 0.869)
 
-[node name="astrobtn1" type="Sprite2D" parent="."]
-z_index = 4
-position = Vector2(283, 564)
-scale = Vector2(0.677, 0.677)
-texture = ExtResource("9_3j4fj")
-
-[node name="astrobtn2" type="Sprite2D" parent="."]
-z_index = 4
-position = Vector2(772, 509)
-scale = Vector2(0.619, 0.619)
-texture = ExtResource("10_yl4sg")
-
-[node name="astrotext" type="Label" parent="."]
-z_index = 3
-offset_left = 326.0
-offset_top = 57.0
-offset_right = 510.0
-offset_bottom = 98.0
-theme_override_fonts/font = ExtResource("11_3r2dq")
-theme_override_font_sizes/font_size = 27
-text = "astrobarrier"
-
-[node name="astrotextlevel" type="Label" parent="."]
-z_index = 3
-offset_left = 586.0
-offset_top = 61.0
-offset_right = 758.0
-offset_bottom = 95.0
-theme_override_fonts/font = ExtResource("11_3r2dq")
-theme_override_font_sizes/font_size = 22
-text = "astrobarrierGUI1"
-
-[node name="astrotextlevel2" type="Label" parent="."]
-z_index = 3
-offset_left = 601.0
-offset_top = 59.0
-offset_right = 641.0
-offset_bottom = 93.0
-theme_override_font_sizes/font_size = 22
-text = "3"
-
-[node name="astrotextlivesgui" type="Label" parent="."]
-z_index = 3
-offset_left = 455.0
-offset_top = 471.0
-offset_right = 655.0
-offset_bottom = 506.0
-theme_override_colors/font_color = Color(0.976471, 0.968627, 0.00784314, 1)
-theme_override_fonts/font = ExtResource("11_3r2dq")
-theme_override_font_sizes/font_size = 22
-text = "astrobarrierGUI2"
-
-[node name="astrolives" type="Label" parent="."]
-z_index = 3
-offset_left = 523.0
-offset_top = 472.0
-offset_right = 563.0
-offset_bottom = 504.0
-theme_override_colors/font_color = Color(0.976471, 0.968627, 0.00784314, 1)
-theme_override_fonts/font = ExtResource("11_3r2dq")
-theme_override_font_sizes/font_size = 22
-text = "0"
-script = ExtResource("12_1q0ww")
-
-[node name="astropoints" type="Label" parent="."]
-z_index = 3
-offset_left = 559.0
-offset_top = 471.0
-offset_right = 630.0
-offset_bottom = 503.0
-theme_override_colors/font_color = Color(0.976471, 0.968627, 0.00784314, 1)
-theme_override_fonts/font = ExtResource("11_3r2dq")
-theme_override_font_sizes/font_size = 22
-text = "0"
-horizontal_alignment = 2
-script = ExtResource("13_dhcgj")
-
 [node name="astrobarrieralvo5" parent="." instance=ExtResource("14_vc7ay")]
 position = Vector2(525, 132)
 scale = Vector2(0.683, 0.683)
@@ -157,15 +51,3 @@ scale = Vector2(0.683, 0.683)
 [node name="astrobarrieralvo2" parent="." instance=ExtResource("15_4bhqc")]
 position = Vector2(348, 254)
 scale = Vector2(0.783, 0.783)
-
-[node name="astroshoots" type="Label" parent="."]
-z_index = 3
-offset_left = 313.0
-offset_top = 474.0
-offset_right = 384.0
-offset_bottom = 506.0
-theme_override_colors/font_color = Color(0.976471, 0.968627, 0.00784314, 1)
-theme_override_fonts/font = ExtResource("11_3r2dq")
-theme_override_font_sizes/font_size = 22
-text = "0"
-script = ExtResource("16_dt4b2")

@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://da1ehcpkxjjsy"]
+
+[ext_resource type="Texture2D" uid="uid://2ui5dmred1w6" path="res://minigames/thin ice/assets/buttons/DefineButton2_130/1.svg" id="1_qpye0"]
+
+[node name="Thin1" type="Node2D"]
+
+[node name="1" type="Sprite2D" parent="."]
+position = Vector2(449, 407)
+texture = ExtResource("1_qpye0")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 426.0
+offset_top = 393.0
+offset_right = 474.0
+offset_bottom = 416.0
+text = "START"

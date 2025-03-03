@@ -1,0 +1,34 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://cmift640bfxf5"
+path="res://.godot/imported/131_Verdana Bold_10pt_st.ttf-92b028d535e610c6ec6593e8b59fc4d7.fontdata"
+
+[deps]
+
+source_file="res://minigames/astro barrier/fonts/131_Verdana Bold_10pt_st.ttf"
+dest_files=["res://.godot/imported/131_Verdana Bold_10pt_st.ttf-92b028d535e610c6ec6593e8b59fc4d7.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+disable_embedded_bitmaps=true
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+hinting=1
+subpixel_positioning=1
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}

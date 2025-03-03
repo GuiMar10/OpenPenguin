@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://ct14kgee5cfy4"]
+[gd_scene load_steps=13 format=3 uid="uid://ct14kgee5cfy4"]
 
 [ext_resource type="Texture2D" uid="uid://biuee6nlmpwun" path="res://minigames/astro barrier/assets/shapes/13.png" id="1_gxsc4"]
 [ext_resource type="Texture2D" uid="uid://buam30mlcrlkb" path="res://minigames/astro barrier/assets/shapes/23.png" id="2_vpa5x"]
@@ -8,8 +8,11 @@
 [ext_resource type="Texture2D" uid="uid://ds82nqbvs0fv4" path="res://minigames/astro barrier/assets/shapes/20.png" id="9_gkjy1"]
 [ext_resource type="Texture2D" uid="uid://brdv3xy6dt021" path="res://minigames/astro barrier/assets/shapes/21.png" id="10_1qkpo"]
 [ext_resource type="Texture2D" uid="uid://5srosm4nx56g" path="res://minigames/astro barrier/assets/shapes/24.png" id="10_3w1vg"]
+[ext_resource type="Script" path="res://minigames/astro barrier/objects/openterminal.gd" id="11_pd8x2"]
 [ext_resource type="FontFile" uid="uid://72d6g0d5a7hf" path="res://minigames/astro barrier/assets/fonts/27_cpBurbankSmallBold.ttf" id="11_slc28"]
 [ext_resource type="PackedScene" uid="uid://3sr705awcx3s" path="res://minigames/astro barrier/objects/astrobarrierbutton.tscn" id="15_02mga"]
+
+[sub_resource type="Theme" id="Theme_n6qyj"]
 
 [node name="astrogame1" type="Node2D"]
 
@@ -77,3 +80,13 @@ scale = Vector2(0.748, 0.748)
 position = Vector2(473, 230)
 scale = Vector2(0.418, 0.418)
 texture = ExtResource("10_3w1vg")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 570.0
+offset_top = 391.0
+offset_right = 609.0
+offset_bottom = 437.0
+theme = SubResource("Theme_n6qyj")
+script = ExtResource("11_pd8x2")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
