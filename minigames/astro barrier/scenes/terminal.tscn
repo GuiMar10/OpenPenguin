@@ -113,8 +113,8 @@ tracks/3/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_kjdn5"]
 _data = {
-"RESET": SubResource("Animation_7phfo"),
-"new_animation": SubResource("Animation_hyius")
+&"RESET": SubResource("Animation_7phfo"),
+&"new_animation": SubResource("Animation_hyius")
 }
 
 [sub_resource type="GDScript" id="GDScript_kj3o1"]
@@ -124,8 +124,8 @@ const GRID_SIZE := 35
 var tool = 'block'
 const block := preload(\"res://minigames/astro barrier/objects/astrobarrierblock.tscn\")
 const target := preload(\"res://minigames/astro barrier/objects/astrobarrieralvo.tscn\")
-const GRID_MIN := Vector2(300, 100)
-const GRID_MAX := Vector2(600, 300)
+const GRID_MIN := Vector2(315, 100)
+const GRID_MAX := Vector2(596, 300)
 
 func changeTool(t):
 	tool = t
@@ -179,6 +179,11 @@ animations = [{
 "name": &"block",
 "speed": 5.0
 }, {
+"frames": [],
+"loop": true,
+"name": &"none",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("5_oigu2")
@@ -219,7 +224,7 @@ texture = ExtResource("4_2p8hi")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_kjdn5")
+&"": SubResource("AnimationLibrary_kjdn5")
 }
 autoplay = "new_animation"
 

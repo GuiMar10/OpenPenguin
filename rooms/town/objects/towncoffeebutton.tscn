@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://ca3c5uxv4sdct"]
 
-[ext_resource type="Script" path="res://rooms/town/objects/towncoffeebutton.gd" id="1_uil1j"]
+[ext_resource type="Script" uid="uid://fwp6ayxm3org" path="res://rooms/town/objects/towncoffeebutton.gd" id="1_uil1j"]
 [ext_resource type="Texture2D" uid="uid://dfxjma21jce6r" path="res://rooms/town/assets/sprites/DefineSprite_235/1.png" id="2_5vdtc"]
 [ext_resource type="Texture2D" uid="uid://54dvqf4gnk17" path="res://rooms/town/assets/sprites/DefineSprite_235/2.png" id="3_foc5x"]
 [ext_resource type="AudioStream" uid="uid://blv1f0rlqda6v" path="res://rooms/town/assets/sounds/3_sfx_DoorCoffeeOpen.mp3" id="4_d248i"]

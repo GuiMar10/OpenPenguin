@@ -7,9 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://dx6rdux1np8m4" path="res://minigames/astro barrier/objects/astrobarrieralvo.tscn" id="8_6mc4k"]
 [ext_resource type="Texture2D" uid="uid://d0n7h4pmt0640" path="res://minigames/astro barrier/assets/shapes/92.png" id="15_2n8pj"]
 [ext_resource type="PackedScene" uid="uid://bekjrr5m64ens" path="res://minigames/astro barrier/objects/astrobarrieralvo3.tscn" id="15_kcugm"]
-[ext_resource type="Script" path="res://minigames/astro barrier/objects/astrobarrieralvo3number1level4.gd" id="16_1clsi"]
+[ext_resource type="Script" uid="uid://sgrquo1suocg" path="res://minigames/astro barrier/objects/astrobarrieralvo3number1level4.gd" id="16_1clsi"]
 [ext_resource type="Texture2D" uid="uid://dwpfpal0ceukm" path="res://minigames/astro barrier/assets/shapes/80.png" id="18_adjkj"]
-[ext_resource type="Script" path="res://minigames/astro barrier/objects/astrobarrieralvo3number2level4.gd" id="18_sdq4o"]
+[ext_resource type="Script" uid="uid://b8f2vso2q7231" path="res://minigames/astro barrier/objects/astrobarrieralvo3number2level4.gd" id="18_sdq4o"]
 [ext_resource type="PackedScene" uid="uid://dubfc0hofk66x" path="res://minigames/astro barrier/objects/astrobarrierblock.tscn" id="20_gxvfa"]
 
 [node name="astrogame1" type="Node2D"]

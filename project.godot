@@ -12,7 +12,7 @@ config_version=5
 
 config/name="OpenPenguin"
 run/main_scene="res://rooms/town/towncenter.tscn"
-config/features=PackedStringArray("4.3", "GL Compatibility")
+config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
@@ -36,12 +36,13 @@ space={
 [internationalization]
 
 locale/translation_remaps={
+"res://minigames/thin ice/assets/titles/en.png": PackedStringArray("res://minigames/thin ice/assets/titles/pt.png:pt", "res://minigames/thin ice/assets/titles/es.png:es"),
 "res://rooms/town/assets/sprites/DefineSprite_292/1.png": PackedStringArray("res://rooms/town/assets/sprites/DefineSprite_294/1.png:pt", "res://rooms/town/assets/sprites/DefineSprite_298/1.png:es"),
 "res://rooms/town/assets/sprites/DefineSprite_303/1.png": PackedStringArray("res://rooms/town/assets/sprites/DefineSprite_305/1.png:pt", "res://rooms/town/assets/sprites/DefineSprite_309/1.png:es"),
 "res://rooms/town/assets/sprites/DefineSprite_314/1.png": PackedStringArray("res://rooms/town/assets/sprites/DefineSprite_316/1.png:pt", "res://rooms/town/assets/sprites/DefineSprite_319/1.png:es"),
 "res://rooms/town/assets/sprites/DefineSprite_322/1.png": PackedStringArray("res://rooms/town/assets/sprites/DefineSprite_323/1.png:pt", "res://rooms/town/assets/sprites/DefineSprite_327/1.png:es")
 }
-locale/translations=PackedStringArray("res://translations/translations.en.translation", "res://translations/translations.es.translation", "res://translations/translations.pt_BR.translation")
+locale/translations=PackedStringArray("res://minigames/astro barrier/locales/locales.en.translation", "res://minigames/astro barrier/locales/locales.es.translation", "res://minigames/astro barrier/locales/locales.pt_BR.translation")
 locale/locale_filter_mode=1
 
 [rendering]

@@ -1,0 +1,18 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://dasypqy7umup1"]
+
+[ext_resource type="FontFile" uid="uid://dgwusjt7cjwm7" path="res://hud/assets/fonts/19_Arial.ttf" id="1_0ry6s"]
+[ext_resource type="StyleBox" uid="uid://cn4inrjjjlkkw" path="res://hud/assets/input_style_box.tres" id="1_o06r2"]
+
+[resource]
+CheckBox/colors/font_color = Color(0, 0, 0, 1)
+CheckBox/colors/icon_disabled_color = Color(1, 1, 1, 1)
+CheckBox/colors/icon_normal_color = Color(1, 1, 1, 1)
+CheckBox/fonts/font = ExtResource("1_0ry6s")
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/fonts/font = ExtResource("1_0ry6s")
+LineEdit/colors/font_color = Color(0, 0, 0, 1)
+LineEdit/styles/normal = ExtResource("1_o06r2")
+TextEdit/colors/caret_background_color = Color(0, 0, 0, 1)
+TextEdit/colors/font_color = Color(0, 0, 0, 1)
+TextEdit/colors/font_placeholder_color = Color(0.49, 0.49, 0.49, 0)
+TextEdit/styles/normal = ExtResource("1_o06r2")

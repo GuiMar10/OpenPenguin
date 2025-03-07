@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://2rjgeh873drr"]
 
 [ext_resource type="Texture2D" uid="uid://csb4ndpxsv0ut" path="res://rooms/town/assets/sprites/DefineSprite_238/1.png" id="1_aqdp4"]
-[ext_resource type="Script" path="res://rooms/town/objects/townshopbutton.gd" id="1_xvqbs"]
+[ext_resource type="Script" uid="uid://c3lihpw2hwial" path="res://rooms/town/objects/townshopbutton.gd" id="1_xvqbs"]
 [ext_resource type="Texture2D" uid="uid://bfx7s4ciogsqk" path="res://rooms/town/assets/sprites/DefineSprite_238/2.png" id="2_mrk2n"]
 [ext_resource type="AudioStream" uid="uid://dwqlddawjntg8" path="res://rooms/town/assets/sounds/1_sfx_DoorShopOpen.mp3" id="4_ro7y0"]
 [ext_resource type="AudioStream" uid="uid://ciols386sd82n" path="res://rooms/town/assets/sounds/2_sfx_DoorShopClose.mp3" id="5_b71xv"]

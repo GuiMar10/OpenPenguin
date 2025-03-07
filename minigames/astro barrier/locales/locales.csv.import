@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bf0femwpuyxgk"
+
+[deps]
+
+files=["res://minigames/astro barrier/locales/locales.en.translation", "res://minigames/astro barrier/locales/locales.es.translation", "res://minigames/astro barrier/locales/locales.pt_BR.translation"]
+
+source_file="res://minigames/astro barrier/locales/locales.csv"
+dest_files=["res://minigames/astro barrier/locales/locales.en.translation", "res://minigames/astro barrier/locales/locales.es.translation", "res://minigames/astro barrier/locales/locales.pt_BR.translation"]
+
+[params]
+
+compress=true
+delimiter=0

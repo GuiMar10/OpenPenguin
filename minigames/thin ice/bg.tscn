@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://oumpo3dpggpx"]
+
+[ext_resource type="Texture2D" uid="uid://4djv5mmooh46" path="res://minigames/thin ice/assets/shapes/109.svg" id="1_rhbyy"]
+
+[node name="Thin1" type="Node2D"]
+
+[node name="109" type="Sprite2D" parent="."]
+position = Vector2(456.48, 287.5)
+scale = Vector2(1.17347, 1.17347)
+texture = ExtResource("1_rhbyy")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 188.0
+offset_top = 36.0
+offset_right = 725.0
+offset_bottom = 508.0
+color = Color(0.85098, 0.945098, 1, 1)

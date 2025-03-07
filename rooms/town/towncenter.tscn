@@ -1,4 +1,4 @@
-[gd_scene load_steps=220 format=3 uid="uid://bb4l6twalmmnp"]
+[gd_scene load_steps=221 format=3 uid="uid://bb4l6twalmmnp"]
 
 [ext_resource type="Texture2D" uid="uid://djoms31b0h1mv" path="res://rooms/town/assets/sprites/DefineSprite_92/1.png" id="1_0narg"]
 [ext_resource type="Texture2D" uid="uid://b1pme7kodk2om" path="res://rooms/town/assets/sprites/DefineSprite_199/1.png" id="1_i3qve"]
@@ -216,6 +216,7 @@
 [ext_resource type="Texture2D" uid="uid://i4cecx2lvqg5" path="res://rooms/town/assets/sprites/DefineSprite_242/1.png" id="214_yfefl"]
 [ext_resource type="Texture2D" uid="uid://ctwc65iqrxlde" path="res://rooms/town/assets/sprites/DefineSprite_332/1.png" id="215_k3gpd"]
 [ext_resource type="Texture2D" uid="uid://dfih16326om8j" path="res://rooms/town/assets/sprites/DefineSprite_330/1.png" id="216_v7xu0"]
+[ext_resource type="AudioStream" uid="uid://t7g6e70da3au" path="res://rooms/town/assets/soundtrack/The Happy Song (Town Theme) - Mobile App, Town - Club Penguin OST.mp3" id="217_hbvdg"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_p4ydv"]
 animations = [{
@@ -958,3 +959,8 @@ texture = ExtResource("215_k3gpd")
 position = Vector2(158, 519)
 scale = Vector2(0.554, 0.554)
 texture = ExtResource("216_v7xu0")
+
+[node name="TheHappySong(townTheme)-MobileApp,Town-ClubPenguinOst" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("217_hbvdg")
+autoplay = true
+bus = &"Soundtrack"

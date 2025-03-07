@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://85hrjsga60co"
+path="res://.godot/imported/Thin Ice - Club Penguin OST.mp3-5bc2a16b3ab54b4fd1a199016bd47823.mp3str"
+
+[deps]
+
+source_file="res://minigames/thin ice/assets/soundtrack/Thin Ice - Club Penguin OST.mp3"
+dest_files=["res://.godot/imported/Thin Ice - Club Penguin OST.mp3-5bc2a16b3ab54b4fd1a199016bd47823.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://ddhrheji4qsug"]
 
-[ext_resource type="Script" path="res://minigames/astro barrier/objects/astrobarriercollision.gd" id="1_n44o4"]
+[ext_resource type="Script" uid="uid://c645muva4ynn1" path="res://minigames/astro barrier/objects/astrobarriercollision.gd" id="1_n44o4"]
 [ext_resource type="Texture2D" uid="uid://nyrwh0s1r30r" path="res://minigames/astro barrier/assets/shapes/60.png" id="2_dar2r"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_khckm"]

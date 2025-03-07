@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://3sr705awcx3s"]
 
-[ext_resource type="Script" path="res://minigames/astro barrier/objects/astrobarrierbutton.gd" id="1_6ktyk"]
+[ext_resource type="Script" uid="uid://0clbidsslsvh" path="res://minigames/astro barrier/objects/astrobarrierbutton.gd" id="1_6ktyk"]
 [ext_resource type="Texture2D" uid="uid://o4tisdh6fr42" path="res://minigames/astro barrier/assets/shapes/25.png" id="2_rfbaq"]
 [ext_resource type="FontFile" uid="uid://72d6g0d5a7hf" path="res://minigames/astro barrier/assets/fonts/27_cpBurbankSmallBold.ttf" id="3_pryqf"]
 

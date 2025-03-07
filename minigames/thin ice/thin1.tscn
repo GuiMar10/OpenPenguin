@@ -1,16 +1,51 @@
-[gd_scene load_steps=2 format=3 uid="uid://da1ehcpkxjjsy"]
+[gd_scene load_steps=7 format=3 uid="uid://da1ehcpkxjjsy"]
 
+[ext_resource type="PackedScene" uid="uid://oumpo3dpggpx" path="res://minigames/thin ice/bg.tscn" id="1_fn470"]
 [ext_resource type="Texture2D" uid="uid://2ui5dmred1w6" path="res://minigames/thin ice/assets/buttons/DefineButton2_130/1.svg" id="1_qpye0"]
+[ext_resource type="FontFile" uid="uid://duh00jmjsviqk" path="res://minigames/thin ice/assets/fonts/131_Verdana Bold_10pt_st.ttf" id="3_fn470"]
+[ext_resource type="Texture2D" uid="uid://dm1j5ob1dbu33" path="res://minigames/thin ice/assets/titles/en.png" id="4_fn470"]
+[ext_resource type="Texture2D" uid="uid://degf0jnrw8jno" path="res://minigames/thin ice/assets/shapes/125.png" id="4_jtipb"]
+[ext_resource type="AudioStream" uid="uid://85hrjsga60co" path="res://minigames/thin ice/assets/soundtrack/Thin Ice - Club Penguin OST.mp3" id="6_3dedl"]
 
 [node name="Thin1" type="Node2D"]
 
-[node name="1" type="Sprite2D" parent="."]
-position = Vector2(449, 407)
+[node name="Thin1" parent="." instance=ExtResource("1_fn470")]
+
+[node name="Button" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 389.0
+offset_top = 458.0
+offset_right = 504.0
+offset_bottom = 491.0
+mouse_default_cursor_shape = 2
+
+[node name="1" type="Sprite2D" parent="Button"]
+position = Vector2(57.4286, 16.75)
+scale = Vector2(1.19643, 1.19643)
 texture = ExtResource("1_qpye0")
 
-[node name="Label" type="Label" parent="."]
-offset_left = 426.0
-offset_top = 393.0
-offset_right = 474.0
-offset_bottom = 416.0
+[node name="Label" type="Label" parent="Button"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 4.00001
+offset_right = 95.0
+offset_bottom = 24.0
+theme_override_fonts/font = ExtResource("3_fn470")
+theme_override_font_sizes/font_size = 16
 text = "START"
+horizontal_alignment = 1
+
+[node name="124" type="Sprite2D" parent="."]
+position = Vector2(456, 287)
+scale = Vector2(1.138, 1.138)
+texture = ExtResource("4_jtipb")
+
+[node name="132" type="Sprite2D" parent="."]
+position = Vector2(444.5, 94.5)
+scale = Vector2(1.119, 1.119)
+texture = ExtResource("4_fn470")
+
+[node name="ThinIce-ClubPenguinOst" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_3dedl")
+autoplay = true
+bus = &"Soundtrack"

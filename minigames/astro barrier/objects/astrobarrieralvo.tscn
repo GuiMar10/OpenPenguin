@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://dx6rdux1np8m4"]
 
-[ext_resource type="Script" path="res://minigames/astro barrier/objects/astrobarrieralvo.gd" id="1_qgreh"]
+[ext_resource type="Script" uid="uid://b2itsmjjsrqm" path="res://minigames/astro barrier/objects/astrobarrieralvo.gd" id="1_qgreh"]
 [ext_resource type="Texture2D" uid="uid://dg8ye42a8ebro" path="res://minigames/astro barrier/assets/shapes/32.png" id="2_6llv6"]
 [ext_resource type="Texture2D" uid="uid://c21x08lb4n82w" path="res://minigames/astro barrier/assets/shapes/33.png" id="3_bf8g7"]
 [ext_resource type="AudioStream" uid="uid://ooivm8s2xv03" path="res://minigames/astro barrier/assets/sounds/12_sound_barrierHit.mp3" id="4_uhivu"]

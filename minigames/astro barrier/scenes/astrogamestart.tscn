@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://ds82nqbvs0fv4" path="res://minigames/astro barrier/assets/shapes/20.png" id="9_gkjy1"]
 [ext_resource type="Texture2D" uid="uid://brdv3xy6dt021" path="res://minigames/astro barrier/assets/shapes/21.png" id="10_1qkpo"]
 [ext_resource type="Texture2D" uid="uid://5srosm4nx56g" path="res://minigames/astro barrier/assets/shapes/24.png" id="10_3w1vg"]
-[ext_resource type="Script" path="res://minigames/astro barrier/objects/openterminal.gd" id="11_pd8x2"]
+[ext_resource type="Script" uid="uid://vyya4d6dux2o" path="res://minigames/astro barrier/objects/openterminal.gd" id="11_pd8x2"]
 [ext_resource type="FontFile" uid="uid://72d6g0d5a7hf" path="res://minigames/astro barrier/assets/fonts/27_cpBurbankSmallBold.ttf" id="11_slc28"]
 [ext_resource type="PackedScene" uid="uid://3sr705awcx3s" path="res://minigames/astro barrier/objects/astrobarrierbutton.tscn" id="15_02mga"]
 
