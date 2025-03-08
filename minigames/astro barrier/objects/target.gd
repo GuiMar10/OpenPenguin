@@ -20,7 +20,7 @@ func _process(_delta):
 			direction = "r"
 
 func _on_body_entered(body):
-	if (body.name == "astrobarrierbullet"):
+	if (body.is_in_group('bullets')):
 		if shoot == false:
 			$AnimatedSprite2D.play("t" + str(size) + '_sh')
 			$barrierhit.play()
@@ -34,6 +34,7 @@ func _on_body_entered(body):
 
 
 func _on_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	if (area.is_in_group('blocks')):
 		if direction == "l":
 			direction = 'r'
 		else:

@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://bqeslwoq46nyn"]
 
 [ext_resource type="PackedScene" uid="uid://k1v6cv4en1ab" path="res://minigames/astro barrier/scenes/background.tscn" id="1_hbym7"]
-[ext_resource type="PackedScene" uid="uid://dkr37jheu3wbl" path="res://minigames/astro barrier/objects/astrobarrierplayer.tscn" id="1_i5hax"]
+[ext_resource type="PackedScene" uid="uid://dkr37jheu3wbl" path="res://minigames/astro barrier/objects/player.tscn" id="1_i5hax"]
 [ext_resource type="Texture2D" uid="uid://1n7hvsme7hvu" path="res://minigames/astro barrier/assets/shapes/14.png" id="2_yvs8i"]
 [ext_resource type="Texture2D" uid="uid://bk06gimbrkp1d" path="res://minigames/astro barrier/assets/shapes/31.png" id="4_xx4qi"]
 [ext_resource type="PackedScene" uid="uid://dubfc0hofk66x" path="res://minigames/astro barrier/objects/block.tscn" id="5_l2wry"]

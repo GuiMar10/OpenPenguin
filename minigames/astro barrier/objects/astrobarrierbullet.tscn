@@ -18,7 +18,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ma65a"]
 size = Vector2(17, 35)
 
-[node name="astrobarrierbullet" type="CharacterBody2D"]
+[node name="astrobarrierbullet" type="CharacterBody2D" groups=["bullets"]]
 script = ExtResource("1_ugfxx")
 
 [node name="astrobarrierbulletsprite" type="AnimatedSprite2D" parent="."]
@@ -31,6 +31,6 @@ position = Vector2(-0.215, 0)
 scale = Vector2(0.577, 0.577)
 shape = SubResource("RectangleShape2D_ma65a")
 
-[node name="sndshoot" type="AudioStreamPlayer2D" parent="."]
+[node name="shoot" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_w2djr")
 autoplay = true

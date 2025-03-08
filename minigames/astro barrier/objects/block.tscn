@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dubfc0hofk66x"]
 
-[ext_resource type="Script" uid="uid://c8g3athtcx2mt" path="res://minigames/astro barrier/objects/astrobarrierblock.gd" id="1_4p2bt"]
+[ext_resource type="Script" uid="uid://c8g3athtcx2mt" path="res://minigames/astro barrier/objects/block.gd" id="1_4p2bt"]
 [ext_resource type="Texture2D" uid="uid://dwpfpal0ceukm" path="res://minigames/astro barrier/assets/shapes/80.png" id="2_tanx3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hymjf"]
@@ -17,7 +17,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="block" type="Area2D"]
+[node name="block" type="Area2D" groups=["blocks"]]
 script = ExtResource("1_4p2bt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

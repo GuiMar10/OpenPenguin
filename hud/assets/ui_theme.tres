@@ -1,15 +1,54 @@
-[gd_resource type="Theme" load_steps=3 format=3 uid="uid://dasypqy7umup1"]
+[gd_resource type="Theme" load_steps=12 format=3 uid="uid://dasypqy7umup1"]
 
 [ext_resource type="FontFile" uid="uid://dgwusjt7cjwm7" path="res://hud/assets/fonts/19_Arial.ttf" id="1_0ry6s"]
 [ext_resource type="StyleBox" uid="uid://cn4inrjjjlkkw" path="res://hud/assets/input_style_box.tres" id="1_o06r2"]
+[ext_resource type="Texture2D" uid="uid://ctpel3gib1sju" path="res://hud/assets/sprites/DefineSprite_111/2.png" id="2_e2jmj"]
+[ext_resource type="Texture2D" uid="uid://yml8una4xy6" path="res://hud/assets/sprites/DefineSprite_111/1.png" id="3_p8ff1"]
+[ext_resource type="FontFile" uid="uid://vyplrxvntaei" path="res://hud/assets/fonts/38_Arial.ttf" id="4_p8ff1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p8ff1"]
+bg_color = Color(0, 0.321569, 0.607843, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fcrkc"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e2jmj"]
+bg_color = Color(1, 1, 1, 0)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e2jmj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p8ff1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fcrkc"]
 
 [resource]
+Button/fonts/font = ExtResource("1_0ry6s")
+Button/styles/hover = SubResource("StyleBoxFlat_p8ff1")
+Button/styles/normal = SubResource("StyleBoxFlat_fcrkc")
 CheckBox/colors/font_color = Color(0, 0, 0, 1)
+CheckBox/colors/font_focus_color = Color(0, 0, 0, 1)
+CheckBox/colors/font_hover_color = Color(0, 0, 0, 1)
+CheckBox/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+CheckBox/colors/font_pressed_color = Color(0, 0, 0, 1)
 CheckBox/colors/icon_disabled_color = Color(1, 1, 1, 1)
 CheckBox/colors/icon_normal_color = Color(1, 1, 1, 1)
-CheckBox/fonts/font = ExtResource("1_0ry6s")
+CheckBox/constants/check_v_offset = -4
+CheckBox/constants/icon_max_width = 33
+CheckBox/font_sizes/font_size = 20
+CheckBox/fonts/font = ExtResource("4_p8ff1")
+CheckBox/icons/checked = ExtResource("2_e2jmj")
+CheckBox/icons/unchecked = ExtResource("3_p8ff1")
+CheckBox/styles/focus = SubResource("StyleBoxFlat_e2jmj")
+CheckBox/styles/hover = SubResource("StyleBoxEmpty_e2jmj")
+CheckBox/styles/hover_pressed = SubResource("StyleBoxEmpty_p8ff1")
+CheckBox/styles/pressed = SubResource("StyleBoxEmpty_fcrkc")
 Label/colors/font_color = Color(0, 0, 0, 1)
-Label/fonts/font = ExtResource("1_0ry6s")
+Label/font_sizes/font_size = 19
+Label/fonts/font = ExtResource("4_p8ff1")
 LineEdit/colors/font_color = Color(0, 0, 0, 1)
 LineEdit/styles/normal = ExtResource("1_o06r2")
 TextEdit/colors/caret_background_color = Color(0, 0, 0, 1)

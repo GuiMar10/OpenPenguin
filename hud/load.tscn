@@ -1,0 +1,721 @@
+[gd_scene load_steps=167 format=3 uid="uid://og5hyhjbkdfw"]
+
+[ext_resource type="Script" uid="uid://cosj77bhaqluo" path="res://hud/load.gd" id="1_ffyam"]
+[ext_resource type="Texture2D" uid="uid://bhnas3swki8in" path="res://hud/assets/shapes/24.svg" id="2_3cdvk"]
+[ext_resource type="Texture2D" uid="uid://706ed082a6xl" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/1.png" id="3_3tij4"]
+[ext_resource type="Texture2D" uid="uid://dyol3yvsceay5" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/2.png" id="4_o2cf4"]
+[ext_resource type="Texture2D" uid="uid://cqhauikgay0wm" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/3.png" id="5_beacl"]
+[ext_resource type="Texture2D" uid="uid://dpdtykupxuuh3" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/4.png" id="6_yk5ja"]
+[ext_resource type="Texture2D" uid="uid://dm1kux16jotvv" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/5.png" id="7_sy2dm"]
+[ext_resource type="Texture2D" uid="uid://dycxv30tq72ja" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/6.png" id="8_c8ony"]
+[ext_resource type="Texture2D" uid="uid://bb212fk4ptx3j" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/7.png" id="9_ikfv1"]
+[ext_resource type="Texture2D" uid="uid://dnxr4jyikruhx" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/8.png" id="10_jsilx"]
+[ext_resource type="Texture2D" uid="uid://bnwttbbwbtdcs" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/9.png" id="11_id1rr"]
+[ext_resource type="Texture2D" uid="uid://b4fyhwakckol2" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/10.png" id="12_xfftf"]
+[ext_resource type="Texture2D" uid="uid://dctr4q55lu8r" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/11.png" id="13_bbd65"]
+[ext_resource type="Texture2D" uid="uid://71fwq2p1mhdu" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/12.png" id="14_8prpn"]
+[ext_resource type="Texture2D" uid="uid://j4utpa1nfmo1" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/13.png" id="15_8rnxs"]
+[ext_resource type="Texture2D" uid="uid://wmffa37vsy5j" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/14.png" id="16_chkfw"]
+[ext_resource type="Texture2D" uid="uid://ddrdyakvge6k" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/15.png" id="17_wqm32"]
+[ext_resource type="Texture2D" uid="uid://ledr76nm6qki" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/16.png" id="18_bnnky"]
+[ext_resource type="Texture2D" uid="uid://daa7xl54mc3xu" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/17.png" id="19_f8evq"]
+[ext_resource type="Texture2D" uid="uid://cjtqig0n2hotg" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/18.png" id="20_0x7rj"]
+[ext_resource type="Texture2D" uid="uid://laoci0gt7uqs" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/19.png" id="21_pfp5u"]
+[ext_resource type="Texture2D" uid="uid://bh2rc68va2p8g" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/20.png" id="22_5qkn2"]
+[ext_resource type="Texture2D" uid="uid://dvffnldiw6myh" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/21.png" id="23_y2q7j"]
+[ext_resource type="Texture2D" uid="uid://dggenu1k5vm5h" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/22.png" id="24_2slc3"]
+[ext_resource type="Texture2D" uid="uid://ctkxftwc0sej4" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/23.png" id="25_inmew"]
+[ext_resource type="Texture2D" uid="uid://cytbo01nydlj6" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/24.png" id="26_sikcy"]
+[ext_resource type="Texture2D" uid="uid://cedmn7lew5pyb" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/25.png" id="27_eh48i"]
+[ext_resource type="Texture2D" uid="uid://b8jmnnb6v8xlc" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/26.png" id="28_ubgrg"]
+[ext_resource type="Texture2D" uid="uid://crkfbt4x2p4ej" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/27.png" id="29_5r0hj"]
+[ext_resource type="Texture2D" uid="uid://c76wbor8x1l5r" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/28.png" id="30_oj0ns"]
+[ext_resource type="Texture2D" uid="uid://dbopb7fuqo4dt" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/29.png" id="31_treys"]
+[ext_resource type="Texture2D" uid="uid://dlx623832ohog" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/30.png" id="32_ltchl"]
+[ext_resource type="Texture2D" uid="uid://d11snv73naqd5" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/31.png" id="33_fk3kf"]
+[ext_resource type="Texture2D" uid="uid://7hn85lja0nyg" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/32.png" id="34_2aa7b"]
+[ext_resource type="Texture2D" uid="uid://cxg6srds1q2ql" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/33.png" id="35_6luse"]
+[ext_resource type="Texture2D" uid="uid://r8qm7n717rlb" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/34.png" id="36_caxua"]
+[ext_resource type="Texture2D" uid="uid://bxrvtyj12ih14" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/35.png" id="37_h6oyi"]
+[ext_resource type="Texture2D" uid="uid://cx1s288yw2ecm" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/36.png" id="38_uv731"]
+[ext_resource type="Texture2D" uid="uid://dwrfef1gjx0i3" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/37.png" id="39_ofwga"]
+[ext_resource type="Texture2D" uid="uid://biywxv70xoe51" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/38.png" id="40_74fij"]
+[ext_resource type="Texture2D" uid="uid://bwdt0xnkiaf2f" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/39.png" id="41_eyq50"]
+[ext_resource type="Texture2D" uid="uid://f0tiorl1xpyr" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/40.png" id="42_clnr3"]
+[ext_resource type="Texture2D" uid="uid://d0j25a8n8s7fm" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/41.png" id="43_4v3y6"]
+[ext_resource type="Texture2D" uid="uid://d1atvxc5ncxu4" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/42.png" id="44_io4ko"]
+[ext_resource type="Texture2D" uid="uid://bptvewexd1lo0" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/43.png" id="45_8m6y2"]
+[ext_resource type="Texture2D" uid="uid://rh726t6snkr6" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/44.png" id="46_utxjd"]
+[ext_resource type="Texture2D" uid="uid://bww0r86k7yfoa" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/45.png" id="47_mqifp"]
+[ext_resource type="Texture2D" uid="uid://hh0ub2gftcpq" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/46.png" id="48_p3vok"]
+[ext_resource type="Texture2D" uid="uid://fppseybtcac2" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/47.png" id="49_fj3qx"]
+[ext_resource type="Texture2D" uid="uid://dmr3xayrigw1j" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/48.png" id="50_nnu31"]
+[ext_resource type="Texture2D" uid="uid://camgnetjh2af" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/49.png" id="51_2dk4n"]
+[ext_resource type="Texture2D" uid="uid://cdqb2sahooffa" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/50.png" id="52_xkgjt"]
+[ext_resource type="Texture2D" uid="uid://bcujnyd43bp8q" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/51.png" id="53_dk6xu"]
+[ext_resource type="Texture2D" uid="uid://5p8mrb6l75fx" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/52.png" id="54_sl1uy"]
+[ext_resource type="Texture2D" uid="uid://bu4pui0votubt" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/53.png" id="55_yqhi7"]
+[ext_resource type="Texture2D" uid="uid://cosdedj68varc" path="res://hud/assets/sprites/DefineSprite_185_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation_com.clubpenguin.main.view.ui.CartSurferLoadingAnimation/54.png" id="56_kswmn"]
+[ext_resource type="Texture2D" uid="uid://dd2dqvkkajkmt" path="res://hud/assets/sprites/DefineSprite_106_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation/1.svg" id="60_mqifp"]
+[ext_resource type="Texture2D" uid="uid://bgfs5oulfj7x5" path="res://hud/assets/sprites/DefineSprite_106_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation/2.svg" id="61_p3vok"]
+[ext_resource type="Texture2D" uid="uid://dxkaygt35ghha" path="res://hud/assets/sprites/DefineSprite_106_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation/3.svg" id="62_fj3qx"]
+[ext_resource type="Texture2D" uid="uid://cr55c7mtv7mse" path="res://hud/assets/sprites/DefineSprite_106_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation/4.svg" id="63_nnu31"]
+[ext_resource type="Texture2D" uid="uid://drae5e1g2xjx8" path="res://hud/assets/sprites/DefineSprite_106_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation/5.svg" id="64_2dk4n"]
+[ext_resource type="Texture2D" uid="uid://br1y2xorjgath" path="res://hud/assets/sprites/DefineSprite_106_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation/6.svg" id="65_xkgjt"]
+[ext_resource type="Texture2D" uid="uid://c1ei4pgalo48p" path="res://hud/assets/sprites/DefineSprite_106_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation/7.svg" id="66_dk6xu"]
+[ext_resource type="Texture2D" uid="uid://c4x4ebts4rlpm" path="res://hud/assets/sprites/DefineSprite_106_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation/8.svg" id="67_sl1uy"]
+[ext_resource type="Texture2D" uid="uid://brt4lqadbeav0" path="res://hud/assets/sprites/DefineSprite_106_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation/9.svg" id="68_yqhi7"]
+[ext_resource type="Texture2D" uid="uid://cyqac1cy8t3tq" path="res://hud/assets/sprites/DefineSprite_106_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation/10.svg" id="69_kswmn"]
+[ext_resource type="Texture2D" uid="uid://50chvn76ntq1" path="res://hud/assets/sprites/DefineSprite_106_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation/11.svg" id="70_m6qwe"]
+[ext_resource type="Texture2D" uid="uid://cmrixhduqtw6g" path="res://hud/assets/sprites/DefineSprite_106_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation/12.svg" id="71_skdq3"]
+[ext_resource type="Texture2D" uid="uid://drdpkiy8vjtyr" path="res://hud/assets/sprites/DefineSprite_106_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation/13.svg" id="72_ed304"]
+[ext_resource type="Texture2D" uid="uid://dp6qmwo3kacps" path="res://hud/assets/sprites/DefineSprite_106_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation/14.svg" id="73_tsai0"]
+[ext_resource type="Texture2D" uid="uid://cjcu2oj28chc5" path="res://hud/assets/sprites/DefineSprite_106_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation/15.svg" id="74_kstd5"]
+[ext_resource type="Texture2D" uid="uid://1ce6reup781k" path="res://hud/assets/sprites/DefineSprite_106_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation_com.clubpenguin.main.view.ui.SnowShovelLoadingAnimation/16.svg" id="75_wkg68"]
+[ext_resource type="Texture2D" uid="uid://crp8aakuk4ryl" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/1.svg" id="76_6wmpf"]
+[ext_resource type="Texture2D" uid="uid://by231upuh86g0" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/2.svg" id="77_5ka41"]
+[ext_resource type="Texture2D" uid="uid://bhdff70gp1xem" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/3.svg" id="78_7w5v6"]
+[ext_resource type="Texture2D" uid="uid://1gwxpa0xse76" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/4.svg" id="79_qlvvc"]
+[ext_resource type="Texture2D" uid="uid://b50tcoqsljd8n" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/5.svg" id="80_bbbg4"]
+[ext_resource type="Texture2D" uid="uid://bcy1oxshb8r8x" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/6.svg" id="81_ikhtn"]
+[ext_resource type="Texture2D" uid="uid://cvqdydr2akbg4" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/7.svg" id="82_h4uio"]
+[ext_resource type="Texture2D" uid="uid://cm5l84h0gjter" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/8.svg" id="83_uem5h"]
+[ext_resource type="Texture2D" uid="uid://6kpo1m467lui" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/9.svg" id="84_nii36"]
+[ext_resource type="Texture2D" uid="uid://dbcjgt8812smb" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/10.svg" id="85_jv3qv"]
+[ext_resource type="Texture2D" uid="uid://cupxae5gkojou" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/11.svg" id="86_hg58k"]
+[ext_resource type="Texture2D" uid="uid://bqo2hms1v84t7" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/12.svg" id="87_buhvy"]
+[ext_resource type="Texture2D" uid="uid://cihhqrssjubxf" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/13.svg" id="88_1n1s8"]
+[ext_resource type="Texture2D" uid="uid://br36e8fgk16rf" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/14.svg" id="89_j73ri"]
+[ext_resource type="Texture2D" uid="uid://bxpgcexebi7rm" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/15.svg" id="90_wral4"]
+[ext_resource type="Texture2D" uid="uid://c2p3pvvyovt5k" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/16.svg" id="91_phnjo"]
+[ext_resource type="Texture2D" uid="uid://baql1idvvcets" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/17.svg" id="92_6tw4c"]
+[ext_resource type="Texture2D" uid="uid://pmb8b5abbtqe" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/18.svg" id="93_jm2fs"]
+[ext_resource type="Texture2D" uid="uid://dii1ncpdhvnix" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/19.svg" id="94_hho6a"]
+[ext_resource type="Texture2D" uid="uid://bdhtlem1umxxq" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/20.svg" id="95_c0d76"]
+[ext_resource type="Texture2D" uid="uid://dpbkn7618n5vn" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/21.svg" id="96_1c1ap"]
+[ext_resource type="Texture2D" uid="uid://dhgd252hwn8od" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/22.svg" id="97_k4ui1"]
+[ext_resource type="Texture2D" uid="uid://k6uc4vs7imdr" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/23.svg" id="98_1jlkr"]
+[ext_resource type="Texture2D" uid="uid://dgn5e1so4nub2" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/24.svg" id="99_rwhq6"]
+[ext_resource type="Texture2D" uid="uid://chhc8rob5rvxg" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/25.svg" id="100_l7wot"]
+[ext_resource type="Texture2D" uid="uid://dtailxics2wvo" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/26.svg" id="101_7xvb2"]
+[ext_resource type="Texture2D" uid="uid://drqhkepkneltt" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/27.svg" id="102_wegwf"]
+[ext_resource type="Texture2D" uid="uid://blfdtqxh0m2yo" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/28.svg" id="103_mvw1l"]
+[ext_resource type="Texture2D" uid="uid://bkkdhcigf8ebt" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/29.svg" id="104_ajs0i"]
+[ext_resource type="Texture2D" uid="uid://clw6kunfpoern" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/30.svg" id="105_cdidw"]
+[ext_resource type="Texture2D" uid="uid://d0h183ntjcgk" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/31.svg" id="106_3n0hb"]
+[ext_resource type="Texture2D" uid="uid://5ttaabqg0fmk" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/32.svg" id="107_xevfm"]
+[ext_resource type="Texture2D" uid="uid://cngnxdpp7eugr" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/33.svg" id="108_3ewx1"]
+[ext_resource type="Texture2D" uid="uid://chfki3n4s57bm" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/34.svg" id="109_jepwr"]
+[ext_resource type="Texture2D" uid="uid://c8jnc5qrysdog" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/35.svg" id="110_txe73"]
+[ext_resource type="Texture2D" uid="uid://b2r60h7ub80pq" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/36.svg" id="111_0tg5l"]
+[ext_resource type="Texture2D" uid="uid://chjrfwm6hta5h" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/37.svg" id="112_pjqu5"]
+[ext_resource type="Texture2D" uid="uid://bipeqoiomaem" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/38.svg" id="113_id1t6"]
+[ext_resource type="Texture2D" uid="uid://dwq1j2y6n8o7g" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/39.svg" id="114_yr31s"]
+[ext_resource type="Texture2D" uid="uid://c3t0y8jeg1gld" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/40.svg" id="115_t5860"]
+[ext_resource type="Texture2D" uid="uid://dud8cgbtg27pl" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/41.svg" id="116_u1ycf"]
+[ext_resource type="Texture2D" uid="uid://dnyn6a26ytxnm" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/42.svg" id="117_a875j"]
+[ext_resource type="Texture2D" uid="uid://c83o1d7hlhh35" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/43.svg" id="118_0nttd"]
+[ext_resource type="Texture2D" uid="uid://bv5oulckofu5l" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/44.svg" id="119_efjk7"]
+[ext_resource type="Texture2D" uid="uid://ca88c6yg6otg3" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/45.svg" id="120_aa587"]
+[ext_resource type="Texture2D" uid="uid://dokvauh6cwoo2" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/46.svg" id="121_1we0w"]
+[ext_resource type="Texture2D" uid="uid://bq8emqsovlahf" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/47.svg" id="122_7eaxu"]
+[ext_resource type="Texture2D" uid="uid://cgdgppe8leky8" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/48.svg" id="123_v6hat"]
+[ext_resource type="Texture2D" uid="uid://inpbdodoastq" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/49.svg" id="124_ncng3"]
+[ext_resource type="Texture2D" uid="uid://bkbkylqoagu4k" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/50.svg" id="125_06nam"]
+[ext_resource type="Texture2D" uid="uid://dkyan66acegte" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/51.svg" id="126_yxbgt"]
+[ext_resource type="Texture2D" uid="uid://sxvap3atrysa" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/52.svg" id="127_04abx"]
+[ext_resource type="Texture2D" uid="uid://ccksu5mhefsnu" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/53.svg" id="128_mfvx7"]
+[ext_resource type="Texture2D" uid="uid://dqtxut838nu3i" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/54.svg" id="129_d8i2c"]
+[ext_resource type="Texture2D" uid="uid://ii4plqiihq8g" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/55.svg" id="130_hran4"]
+[ext_resource type="Texture2D" uid="uid://d1vqxixtgdg72" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/56.svg" id="131_6ggrq"]
+[ext_resource type="Texture2D" uid="uid://c017546gu6wen" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/57.svg" id="132_s814n"]
+[ext_resource type="Texture2D" uid="uid://cbl105f8mea0l" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/58.svg" id="133_hbs4f"]
+[ext_resource type="Texture2D" uid="uid://c2lnhp2wrj40l" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/59.svg" id="134_7187c"]
+[ext_resource type="Texture2D" uid="uid://4wwnom67yvgb" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/60.svg" id="135_3m064"]
+[ext_resource type="Texture2D" uid="uid://dtsh2owcovr16" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/61.svg" id="136_ppudm"]
+[ext_resource type="Texture2D" uid="uid://dpturbmvwdokb" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/62.svg" id="137_cjoue"]
+[ext_resource type="Texture2D" uid="uid://d3e36yqfys1sk" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/63.svg" id="138_kvfkq"]
+[ext_resource type="Texture2D" uid="uid://ceryu3b6q3sah" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/64.svg" id="139_6a0wi"]
+[ext_resource type="Texture2D" uid="uid://dxffg8pcj7o01" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/65.svg" id="140_iml12"]
+[ext_resource type="Texture2D" uid="uid://o77a7tuaiwh0" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/66.svg" id="141_hxkdp"]
+[ext_resource type="Texture2D" uid="uid://hbc4vhvquh2f" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/67.svg" id="142_ftv8b"]
+[ext_resource type="Texture2D" uid="uid://b0vblc22rys2y" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/68.svg" id="143_8x0kh"]
+[ext_resource type="Texture2D" uid="uid://bjdb0mytpn7gq" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/69.svg" id="144_172oc"]
+[ext_resource type="Texture2D" uid="uid://b1ejjqctb2av" path="res://hud/assets/sprites/DefineSprite_50/1.png" id="145_3tij4"]
+[ext_resource type="Texture2D" uid="uid://87ac2rjtijrg" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/70.svg" id="145_ix8kf"]
+[ext_resource type="Texture2D" uid="uid://cqs3tmxnhm8tk" path="res://hud/assets/sprites/DefineSprite_50/2.png" id="146_o2cf4"]
+[ext_resource type="Texture2D" uid="uid://b6fhfn7mhd2fq" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/71.svg" id="146_wfely"]
+[ext_resource type="Texture2D" uid="uid://c52mjgive66nr" path="res://hud/assets/sprites/DefineSprite_50/3.png" id="147_beacl"]
+[ext_resource type="Texture2D" uid="uid://c4iadwk0wkjkf" path="res://hud/assets/sprites/DefineSprite_252_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation_com.clubpenguin.main.view.ui.PizzaTossLoadingAnimation/72.svg" id="147_tdavh"]
+[ext_resource type="Texture2D" uid="uid://10va18htc5ja" path="res://hud/assets/sprites/DefineSprite_50/4.png" id="148_yk5ja"]
+[ext_resource type="Texture2D" uid="uid://di7card2u0n1x" path="res://hud/assets/sprites/DefineSprite_50/5.png" id="149_sy2dm"]
+[ext_resource type="Texture2D" uid="uid://s2h1sjhq82c5" path="res://hud/assets/sprites/DefineSprite_50/6.png" id="150_c8ony"]
+[ext_resource type="Texture2D" uid="uid://cgqr50x2yyslj" path="res://hud/assets/sprites/DefineSprite_50/7.png" id="151_ikfv1"]
+[ext_resource type="Texture2D" uid="uid://bfllwfak75k7" path="res://hud/assets/sprites/DefineSprite_50/8.png" id="152_jsilx"]
+[ext_resource type="Texture2D" uid="uid://dh6pn1m0ogw5j" path="res://hud/assets/sprites/DefineSprite_50/9.png" id="153_id1rr"]
+[ext_resource type="Texture2D" uid="uid://dbur1fdq3frtx" path="res://hud/assets/sprites/DefineSprite_50/10.png" id="154_xfftf"]
+[ext_resource type="Texture2D" uid="uid://ckqp4y2heq2r0" path="res://hud/assets/sprites/DefineSprite_50/11.png" id="155_bbd65"]
+[ext_resource type="Texture2D" uid="uid://dy04w65rn40d7" path="res://hud/assets/sprites/DefineSprite_50/12.png" id="156_8prpn"]
+[ext_resource type="Texture2D" uid="uid://dx2alsg6mv3ki" path="res://hud/assets/sprites/DefineSprite_50/13.png" id="157_8rnxs"]
+[ext_resource type="Texture2D" uid="uid://pm574l7igil2" path="res://hud/assets/sprites/DefineSprite_50/14.png" id="158_chkfw"]
+[ext_resource type="Texture2D" uid="uid://dupe15pchud8s" path="res://hud/assets/sprites/DefineSprite_50/15.png" id="159_wqm32"]
+[ext_resource type="Texture2D" uid="uid://eelrgiibktkl" path="res://hud/assets/sprites/DefineSprite_50/16.png" id="160_bnnky"]
+[ext_resource type="Texture2D" uid="uid://ckwh1pe15pmfh" path="res://hud/assets/sprites/DefineSprite_50/17.png" id="161_f8evq"]
+[ext_resource type="Texture2D" uid="uid://b8d14k6tgq3pt" path="res://hud/assets/sprites/DefineSprite_50/18.png" id="162_0x7rj"]
+[ext_resource type="Texture2D" uid="uid://dqudnqbx50n0" path="res://hud/assets/sprites/DefineSprite_50/19.png" id="163_pfp5u"]
+[ext_resource type="Texture2D" uid="uid://b42nrjwhla5r6" path="res://hud/assets/sprites/DefineSprite_50/20.png" id="164_5qkn2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_el6bq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_3tij4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_o2cf4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_beacl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_yk5ja")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_sy2dm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_c8ony")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ikfv1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_jsilx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_id1rr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_xfftf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_bbd65")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_8prpn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_8rnxs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_chkfw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_wqm32")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_bnnky")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_f8evq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_0x7rj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_pfp5u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_5qkn2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_y2q7j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_2slc3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_inmew")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_sikcy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_eh48i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_ubgrg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_5r0hj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_oj0ns")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_treys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_ltchl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_fk3kf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_2aa7b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_6luse")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_caxua")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_h6oyi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_uv731")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_ofwga")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_74fij")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_eyq50")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_clnr3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_4v3y6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_io4ko")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_8m6y2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_utxjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_mqifp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_p3vok")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_fj3qx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_nnu31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_2dk4n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_xkgjt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_dk6xu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_sl1uy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_yqhi7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_kswmn")
+}],
+"loop": true,
+"name": &"cart",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("60_mqifp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_p3vok")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_fj3qx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_nnu31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_2dk4n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_xkgjt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_dk6xu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_sl1uy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_yqhi7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_kswmn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_m6qwe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_skdq3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_ed304")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_tsai0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_kstd5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_wkg68")
+}],
+"loop": true,
+"name": &"default",
+"speed": 21.99
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("76_6wmpf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_5ka41")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_7w5v6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_qlvvc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_bbbg4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_ikhtn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_h4uio")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_uem5h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_nii36")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_jv3qv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_hg58k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_buhvy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_1n1s8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_j73ri")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_wral4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_phnjo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_6tw4c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_jm2fs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_hho6a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_c0d76")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_1c1ap")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_k4ui1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_1jlkr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_rwhq6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_l7wot")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_7xvb2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_wegwf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_mvw1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_ajs0i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_cdidw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_3n0hb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_xevfm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_3ewx1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_jepwr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_txe73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_0tg5l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_pjqu5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_id1t6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_yr31s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_t5860")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_u1ycf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_a875j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_0nttd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_efjk7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_aa587")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_1we0w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_7eaxu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_v6hat")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_ncng3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_06nam")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_yxbgt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_04abx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_mfvx7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_d8i2c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_hran4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131_6ggrq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_s814n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_hbs4f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134_7187c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_3m064")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_ppudm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137_cjoue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138_kvfkq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("139_6a0wi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140_iml12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141_hxkdp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("142_ftv8b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143_8x0kh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144_172oc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("145_ix8kf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("146_wfely")
+}, {
+"duration": 1.0,
+"texture": ExtResource("147_tdavh")
+}],
+"loop": true,
+"name": &"pizza",
+"speed": 24.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y2q7j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("145_3tij4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("146_o2cf4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("147_beacl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("148_yk5ja")
+}, {
+"duration": 1.0,
+"texture": ExtResource("149_sy2dm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("150_c8ony")
+}, {
+"duration": 1.0,
+"texture": ExtResource("151_ikfv1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("152_jsilx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("153_id1rr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("154_xfftf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("155_bbd65")
+}, {
+"duration": 1.0,
+"texture": ExtResource("156_8prpn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("157_8rnxs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("158_chkfw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("159_wqm32")
+}, {
+"duration": 1.0,
+"texture": ExtResource("160_bnnky")
+}, {
+"duration": 1.0,
+"texture": ExtResource("161_f8evq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("162_0x7rj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("163_pfp5u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("164_5qkn2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 24.0
+}]
+
+[node name="Load" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ffyam")
+
+[node name="Bg" type="Sprite2D" parent="."]
+position = Vector2(455.208, 287.5)
+scale = Vector2(1.19792, 1.19792)
+texture = ExtResource("2_3cdvk")
+
+[node name="LoadingAnimation" type="AnimatedSprite2D" parent="."]
+position = Vector2(446, 280)
+sprite_frames = SubResource("SpriteFrames_el6bq")
+animation = &"cart"
+autoplay = "default"
+frame_progress = 0.671898
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(456, 470)
+scale = Vector2(0.382812, 0.382812)
+sprite_frames = SubResource("SpriteFrames_y2q7j")
+autoplay = "default"
+frame_progress = 0.0316242
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -49.5
+offset_top = -87.0
+offset_right = 49.5
+offset_bottom = -64.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Joining Town"

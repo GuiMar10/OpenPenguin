@@ -1,5 +1,6 @@
-[gd_scene load_steps=17 format=3 uid="uid://dmw2yccgpjno1"]
+[gd_scene load_steps=19 format=3 uid="uid://dmw2yccgpjno1"]
 
+[ext_resource type="Script" uid="uid://bhcjt8kjaljqe" path="res://minigames/astro barrier/scenes/terminal.gd" id="1_exg6w"]
 [ext_resource type="Texture2D" uid="uid://biuee6nlmpwun" path="res://minigames/astro barrier/assets/shapes/13.png" id="1_kkkuq"]
 [ext_resource type="Texture2D" uid="uid://sandumhmdhx5" path="res://minigames/astro barrier/assets/shapes/15.png" id="4_2p8hi"]
 [ext_resource type="FontFile" uid="uid://dpc5hlo0yw5i3" path="res://minigames/astro barrier/assets/fonts/103_cpBurbankSmall_10pt_st.ttf" id="4_qdcfp"]
@@ -7,7 +8,9 @@
 [ext_resource type="Theme" uid="uid://bqtlr6cxc3h1g" path="res://minigames/astro barrier/terminal_ui.tres" id="6_exg6w"]
 [ext_resource type="Texture2D" uid="uid://dwpfpal0ceukm" path="res://minigames/astro barrier/assets/shapes/80.png" id="6_plxuv"]
 [ext_resource type="Texture2D" uid="uid://5srosm4nx56g" path="res://minigames/astro barrier/assets/shapes/24.png" id="7_4fdyo"]
-[ext_resource type="PackedScene" uid="uid://dkr37jheu3wbl" path="res://minigames/astro barrier/objects/astrobarrierplayer.tscn" id="8_rc6rr"]
+[ext_resource type="PackedScene" uid="uid://dkr37jheu3wbl" path="res://minigames/astro barrier/objects/player.tscn" id="8_rc6rr"]
+[ext_resource type="Texture2D" uid="uid://cwuuwch6anfpr" path="res://minigames/astro barrier/assets/shapes/132.svg" id="9_dd0ow"]
+[ext_resource type="Texture2D" uid="uid://ceboi05nw5kd1" path="res://minigames/astro barrier/assets/shapes/130.svg" id="11_t1p2n"]
 
 [sub_resource type="Animation" id="Animation_7phfo"]
 length = 0.001
@@ -121,88 +124,102 @@ _data = {
 &"new_animation": SubResource("Animation_hyius")
 }
 
-[sub_resource type="GDScript" id="GDScript_yruuy"]
-script/source = "extends Button
-# Store the original position so we can revert back
-var scaling = 1
-
-
-func _on_button_up():
-	while scaling < 1:
-		scaling += 0.1
-		scale = Vector2(scaling, scaling)
-
-
-func _on_button_down():
-	while scaling > 0.0:
-		scaling -= 0.1
-		scale = Vector2(scaling, scaling)
-"
-
 [sub_resource type="GDScript" id="GDScript_kj3o1"]
 script/source = "extends CharacterBody2D
 
 const GRID_SIZE := 35
-var tool = 'block'
-const block := preload(\"res://minigames/astro barrier/objects/block.tscn\")
-const target := preload(\"res://minigames/astro barrier/objects/target.tscn\")
-const bar := preload(\"res://minigames/astro barrier/objects/terminal/bar.tscn\")
+var tool: String = \"block\"
+
+# Preload scenes with descriptive names
+const BlockScene := preload(\"res://minigames/astro barrier/objects/block.tscn\")
+const TargetScene := preload(\"res://minigames/astro barrier/objects/target.tscn\")
+const OrangeScene := preload(\"res://minigames/astro barrier/objects/orange_target.tscn\")
+const OrangeBlockScene := preload(\"res://minigames/astro barrier/objects/orange_block.tscn\")
+const BarScene := preload(\"res://minigames/astro barrier/objects/terminal/bar.tscn\")
+
 const GRID_MIN := Vector2(315, 100)
 const GRID_MAX := Vector2(596, 300)
-var rect = Rect2(GRID_MIN, GRID_MAX)
+# Define the grid rectangle correctly using GRID_MAX - GRID_MIN as its size
+var grid_rect: Rect2 = Rect2(GRID_MIN, GRID_MAX - GRID_MIN)
 
-func changeTool(t):
-	if t == \"target\":
-		scale = Vector2(1.2, 1.2)
-	else:
-		scale = Vector2(0.9, 0.9)
+func change_tool(t: String) -> void:
+	# Use match to decide the scale for each tool type
+	match t:
+		\"target\":
+			scale = Vector2(1.2, 1.2)
+		\"block\":
+			scale = Vector2(0.9, 0.9)
+		\"orange_block\":
+			scale = Vector2(1.9, 1.9)
+		_:
+			scale = Vector2(3, 3)
 	tool = t
 	$AnimatedSprite2D.play(t)
 	
-func _ready():
-	changeTool('target')
+func _ready() -> void:
+	change_tool(\"target\")
 	
-func _physics_process(delta):
-	var mouse_pos = get_global_mouse_position().snapped(Vector2(GRID_SIZE, GRID_SIZE))
-	
-	position = Vector2(
+func _physics_process(delta: float) -> void:
+	# Get the mouse position snapped to the grid and clamp it within the grid area
+	var mouse_pos: Vector2 = get_global_mouse_position().snapped(Vector2(GRID_SIZE, GRID_SIZE))
+	var clamped_pos: Vector2 = Vector2(
 		clamp(mouse_pos.x, GRID_MIN.x, GRID_MAX.x),
 		clamp(mouse_pos.y, GRID_MIN.y, GRID_MAX.y)
 	)
 	
+	# Update the node's position and visibility based on whether the mouse is in the grid
+	position = clamped_pos
+	$AnimatedSprite2D.visible = grid_rect.has_point(mouse_pos)
+	
+	# Change tools with key presses (using elif to avoid multiple changes in one frame)
 	if Input.is_key_pressed(KEY_1):
-		changeTool('target')
-	if Input.is_key_pressed(KEY_2):
-		changeTool('block')
+		change_tool(\"target\")
+	elif Input.is_key_pressed(KEY_2):
+		change_tool(\"block\")
+	elif Input.is_key_pressed(KEY_3):
+		change_tool(\"orange\")
+	elif Input.is_key_pressed(KEY_4):
+		change_tool(\"orange_block\")
 	
-	if !rect.has_point(mouse_pos):
-		$AnimatedSprite2D.visible = false
-	else: 
-		$AnimatedSprite2D.visible = true
-	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and rect.has_point(mouse_pos):
-		if tool == 'target':
-			var block_in = target.instantiate()
-			var bar = bar.instantiate()
-			block_in.position = mouse_pos.snapped(Vector2(GRID_SIZE, GRID_SIZE))
-			bar.position = Vector2(455, block_in.position.y)
-			get_parent().add_child(bar)
-			get_parent().add_child(block_in)
-			tool = ''
-		elif tool == 'block':
-			var block_in = block.instantiate()
-			block_in.scale.x = 0.32
-			block_in.scale.y = 0.32
-			block_in.position = Vector2(
-			clamp(mouse_pos.x, GRID_MIN.x, GRID_MAX.x),
-			clamp(mouse_pos.y, GRID_MIN.y, GRID_MAX.y)
-		)
-			get_parent().add_child(block_in)
-	
-func _target_selected():
-	changeTool('target')
+	# Place objects when the left mouse button is pressed and the mouse is inside the grid
+	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and grid_rect.has_point(mouse_pos):
+		match tool:
+			\"target\":
+				var target_instance = TargetScene.instantiate()
+				var bar_instance = BarScene.instantiate()
+				target_instance.position = clamped_pos
+				bar_instance.position = Vector2(455, clamped_pos.y)
+				get_parent().add_child(bar_instance)
+				get_parent().add_child(target_instance)
+				# Reset tool if needed (or change to a default tool)
+				tool = \"\"
+			\"block\":
+				var block_instance = BlockScene.instantiate()
+				block_instance.scale = Vector2(0.32, 0.32)
+				block_instance.position = clamped_pos
+				get_parent().add_child(block_instance)
+			\"orange\":
+				var orange_instance = OrangeScene.instantiate()
+				orange_instance.position = clamped_pos
+				get_parent().add_child(orange_instance)
+			\"orange_block\":
+				var orange_block_instance = OrangeBlockScene.instantiate()
+				# Offset the y-position by 28 as before
+				orange_block_instance.position = clamped_pos + Vector2(0, 28)
+				get_parent().add_child(orange_block_instance)
 
-func _on_button_2_pressed():
-	changeTool('block')
+# Signal handlers to change the tool via UI buttons or similar
+func _target_selected() -> void:
+	change_tool(\"target\")
+
+func _on_button_2_pressed() -> void:
+	change_tool(\"block\")
+
+func _orange_selected() -> void:
+	change_tool(\"orange\")
+
+func _on_orange_block_pressed():
+	change_tool('orange_block')
 "
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7skmi"]
@@ -222,6 +239,22 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("9_dd0ow")
+}],
+"loop": true,
+"name": &"orange",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_t1p2n")
+}],
+"loop": true,
+"name": &"orange_block",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("5_oigu2")
 }],
 "loop": true,
@@ -232,7 +265,8 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yruuy"]
 size = Vector2(33.3333, 32.2222)
 
-[node name="Background" type="Node2D"]
+[node name="Terminal" type="Node2D"]
+script = ExtResource("1_exg6w")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 custom_minimum_size = Vector2(400, 0)
@@ -287,6 +321,7 @@ offset_left = 292.0
 offset_top = 44.0
 offset_right = 617.0
 offset_bottom = 451.0
+size_flags_horizontal = 4
 color = Color(0, 0.12, 0.12, 0.6)
 
 [node name="Label2" type="Label" parent="Node2D"]
@@ -299,24 +334,43 @@ theme_override_fonts/font = ExtResource("4_qdcfp")
 theme_override_font_sizes/font_size = 21
 text = "astroconsole v0.1"
 
-[node name="Button" type="Button" parent="Node2D"]
-offset_left = 288.0
-offset_top = 461.0
-offset_right = 366.0
-offset_bottom = 518.0
+[node name="Target" type="Button" parent="Node2D"]
+offset_left = 284.0
+offset_top = 463.0
+offset_right = 362.0
+offset_bottom = 520.0
 theme = ExtResource("6_exg6w")
 icon = ExtResource("5_oigu2")
 icon_alignment = 1
 expand_icon = true
-script = SubResource("GDScript_yruuy")
 
-[node name="Button2" type="Button" parent="Node2D"]
-offset_left = 375.0
-offset_top = 461.0
-offset_right = 453.0
-offset_bottom = 518.0
+[node name="Block" type="Button" parent="Node2D"]
+offset_left = 371.0
+offset_top = 463.0
+offset_right = 449.0
+offset_bottom = 520.0
 theme = ExtResource("6_exg6w")
 icon = ExtResource("6_plxuv")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Orange" type="Button" parent="Node2D"]
+offset_left = 460.0
+offset_top = 463.0
+offset_right = 538.0
+offset_bottom = 520.0
+theme = ExtResource("6_exg6w")
+icon = ExtResource("9_dd0ow")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Orange Block" type="Button" parent="Node2D"]
+offset_left = 548.0
+offset_top = 463.0
+offset_right = 626.0
+offset_bottom = 520.0
+theme = ExtResource("6_exg6w")
+icon = ExtResource("11_t1p2n")
 icon_alignment = 1
 expand_icon = true
 
@@ -341,7 +395,9 @@ animation = &"target"
 position = Vector2(-0.311096, -0.738889)
 shape = SubResource("RectangleShape2D_yruuy")
 
-[connection signal="button_down" from="Node2D/Button" to="Node2D/Button" method="_on_button_down"]
-[connection signal="button_up" from="Node2D/Button" to="Node2D/Button" method="_on_button_up"]
-[connection signal="pressed" from="Node2D/Button" to="Node2D/Cursor" method="_target_selected"]
-[connection signal="pressed" from="Node2D/Button2" to="Node2D/Cursor" method="_on_button_2_pressed"]
+[connection signal="button_down" from="Node2D/Target" to="Node2D/Target" method="_on_button_down"]
+[connection signal="button_up" from="Node2D/Target" to="Node2D/Target" method="_on_button_up"]
+[connection signal="pressed" from="Node2D/Target" to="Node2D/Cursor" method="_target_selected"]
+[connection signal="pressed" from="Node2D/Block" to="Node2D/Cursor" method="_on_button_2_pressed"]
+[connection signal="pressed" from="Node2D/Orange" to="Node2D/Cursor" method="_orange_selected"]
+[connection signal="pressed" from="Node2D/Orange Block" to="Node2D/Cursor" method="_on_orange_block_pressed"]
