@@ -11,7 +11,7 @@ This project is kinda dead, but feel free to add some of your rooms and minigame
 - [x] Portuguese, English and Spanish translations
 
 ## Screenshots
-![image](https://github.com/user-attachments/assets/b2187b23-44dd-45de-a142-1295221375a5)
+![image](https://github.com/user-attachments/assets/a6f4b27a-ee66-4b74-ba67-0eb4f6877771)
 ![image](https://github.com/user-attachments/assets/85ceda4a-e04d-415a-ba25-b4a228f6690d)
 
 
