@@ -4,9 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://dkr37jheu3wbl" path="res://minigames/astro barrier/objects/astrobarrierplayer.tscn" id="1_i5hax"]
 [ext_resource type="Texture2D" uid="uid://1n7hvsme7hvu" path="res://minigames/astro barrier/assets/shapes/14.png" id="2_yvs8i"]
 [ext_resource type="Texture2D" uid="uid://bk06gimbrkp1d" path="res://minigames/astro barrier/assets/shapes/31.png" id="4_xx4qi"]
-[ext_resource type="PackedScene" uid="uid://dubfc0hofk66x" path="res://minigames/astro barrier/objects/astrobarrierblock.tscn" id="5_l2wry"]
+[ext_resource type="PackedScene" uid="uid://dubfc0hofk66x" path="res://minigames/astro barrier/objects/block.tscn" id="5_l2wry"]
 [ext_resource type="PackedScene" uid="uid://ddhrheji4qsug" path="res://minigames/astro barrier/objects/astrobarriercollision.tscn" id="5_nyck7"]
-[ext_resource type="PackedScene" uid="uid://dx6rdux1np8m4" path="res://minigames/astro barrier/objects/astrobarrieralvo.tscn" id="7_6vjbt"]
+[ext_resource type="PackedScene" uid="uid://dx6rdux1np8m4" path="res://minigames/astro barrier/objects/target.tscn" id="7_6vjbt"]
 
 [node name="astrogame1" type="Node2D"]
 
@@ -35,10 +35,9 @@ position = Vector2(307, 463)
 visible = false
 position = Vector2(637, 460)
 
-[node name="astrobarrieralvo2" parent="." instance=ExtResource("7_6vjbt")]
-position = Vector2(429, 180)
-scale = Vector2(0.869, 0.869)
-
 [node name="astrobarrierblock" parent="." instance=ExtResource("5_l2wry")]
 position = Vector2(468, 316)
 scale = Vector2(0.473, 0.473)
+
+[node name="target" parent="." instance=ExtResource("7_6vjbt")]
+position = Vector2(561, 180)

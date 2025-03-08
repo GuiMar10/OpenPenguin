@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://biuee6nlmpwun" path="res://minigames/astro barrier/assets/shapes/13.png" id="1_kkkuq"]
 [ext_resource type="Texture2D" uid="uid://sandumhmdhx5" path="res://minigames/astro barrier/assets/shapes/15.png" id="4_2p8hi"]
 [ext_resource type="FontFile" uid="uid://dpc5hlo0yw5i3" path="res://minigames/astro barrier/assets/fonts/103_cpBurbankSmall_10pt_st.ttf" id="4_qdcfp"]
+[ext_resource type="PackedScene" uid="uid://bgu2knk23if8k" path="res://minigames/astro barrier/objects/terminal/bar.tscn" id="5_exg6w"]
 [ext_resource type="Texture2D" uid="uid://dg8ye42a8ebro" path="res://minigames/astro barrier/assets/shapes/32.png" id="5_oigu2"]
 [ext_resource type="Theme" uid="uid://bqtlr6cxc3h1g" path="res://minigames/astro barrier/terminal_ui.tres" id="6_exg6w"]
 [ext_resource type="Texture2D" uid="uid://dwpfpal0ceukm" path="res://minigames/astro barrier/assets/shapes/80.png" id="6_plxuv"]
@@ -60,9 +61,6 @@ tracks/3/keys = {
 "values": [true]
 }
 
-[sub_resource type="Animation" id="Animation_exg6w"]
-resource_name = "buttons"
-
 [sub_resource type="Animation" id="Animation_hyius"]
 resource_name = "new_animation"
 tracks/0/type = "value"
@@ -117,7 +115,6 @@ tracks/3/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_kjdn5"]
 _data = {
 &"RESET": SubResource("Animation_7phfo"),
-&"buttons": SubResource("Animation_exg6w"),
 &"new_animation": SubResource("Animation_hyius")
 }
 
@@ -159,7 +156,7 @@ func changeTool(t):
 	tool = t
 	$AnimatedSprite2D.play(t)
 	
-func _ready():
+func _on_ready():
 	changeTool('target')
 	
 func _physics_process(delta):
@@ -299,6 +296,9 @@ theme_override_fonts/font = ExtResource("4_qdcfp")
 theme_override_font_sizes/font_size = 21
 text = "astroconsole v0.1"
 
+[node name="C92" parent="Node2D" instance=ExtResource("5_exg6w")]
+position = Vector2(455, 104)
+
 [node name="Button" type="Button" parent="Node2D"]
 offset_left = 288.0
 offset_top = 461.0
@@ -326,8 +326,6 @@ scale = Vector2(0.51, 0.51)
 
 [node name="Cursor" type="CharacterBody2D" parent="Node2D"]
 modulate = Color(1, 1, 1, 0.203922)
-top_level = true
-visibility_layer = 5
 position = Vector2(258.28, -30.335)
 scale = Vector2(0.9, 0.9)
 script = SubResource("GDScript_kj3o1")

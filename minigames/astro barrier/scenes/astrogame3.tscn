@@ -1,12 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://311a4hk77k4"]
+[gd_scene load_steps=6 format=3 uid="uid://311a4hk77k4"]
 
 [ext_resource type="PackedScene" uid="uid://k1v6cv4en1ab" path="res://minigames/astro barrier/scenes/background.tscn" id="1_oi6mc"]
 [ext_resource type="PackedScene" uid="uid://dkr37jheu3wbl" path="res://minigames/astro barrier/objects/astrobarrierplayer.tscn" id="3_jv5j3"]
 [ext_resource type="Texture2D" uid="uid://bk06gimbrkp1d" path="res://minigames/astro barrier/assets/shapes/31.png" id="4_ydq6h"]
 [ext_resource type="PackedScene" uid="uid://ddhrheji4qsug" path="res://minigames/astro barrier/objects/astrobarriercollision.tscn" id="7_gbpxe"]
-[ext_resource type="PackedScene" uid="uid://dx6rdux1np8m4" path="res://minigames/astro barrier/objects/astrobarrieralvo.tscn" id="8_dsubi"]
-[ext_resource type="PackedScene" uid="uid://bwhx0bmop2vv7" path="res://minigames/astro barrier/objects/astrobarrieralvo2.tscn" id="14_vc7ay"]
-[ext_resource type="PackedScene" uid="uid://bekjrr5m64ens" path="res://minigames/astro barrier/objects/astrobarrieralvo3.tscn" id="15_4bhqc"]
+[ext_resource type="PackedScene" uid="uid://dx6rdux1np8m4" path="res://minigames/astro barrier/objects/target.tscn" id="8_dsubi"]
 
 [node name="astrogame1" type="Node2D"]
 
@@ -40,14 +38,13 @@ position = Vector2(307, 463)
 visible = false
 position = Vector2(637, 460)
 
-[node name="astrobarrieralvo" parent="." instance=ExtResource("8_dsubi")]
-position = Vector2(518, 211)
-scale = Vector2(0.869, 0.869)
+[node name="target1" parent="." instance=ExtResource("8_dsubi")]
+position = Vector2(443, 211)
 
-[node name="astrobarrieralvo5" parent="." instance=ExtResource("14_vc7ay")]
-position = Vector2(525, 132)
-scale = Vector2(0.683, 0.683)
+[node name="target3" parent="." instance=ExtResource("8_dsubi")]
+position = Vector2(455, 132)
+size = 3
 
-[node name="astrobarrieralvo2" parent="." instance=ExtResource("15_4bhqc")]
-position = Vector2(348, 254)
-scale = Vector2(0.783, 0.783)
+[node name="target" parent="." instance=ExtResource("8_dsubi")]
+position = Vector2(437, 255)
+size = 1

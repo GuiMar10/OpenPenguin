@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgu2knk23if8k"]
+
+[ext_resource type="Texture2D" uid="uid://dtsuqrc0caut6" path="res://minigames/astro barrier/assets/shapes/c92.png" id="1_dciot"]
+
+[node name="Bar" type="Sprite2D"]
+modulate = Color(0, 1, 0.483333, 1)
+scale = Vector2(0.621212, 0.621212)
+texture = ExtResource("1_dciot")

@@ -1,0 +1,13 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bqtlr6cxc3h1g"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p2noc"]
+bg_color = Color(2.10572e-08, 0.106147, 0.0794333, 1)
+border_color = Color(0.625483, 0.90106, 2.31028e-06, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[resource]
+Button/constants/icon_max_width = 32
+Button/styles/normal = SubResource("StyleBoxFlat_p2noc")

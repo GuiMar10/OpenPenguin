@@ -1,25 +1,28 @@
 extends Area2D
 
+@export var direction: String = "r"
+@export var size: int = 2
 var shoot = false
 var speed = 3
-var direction = "right"
 
-
+func _ready():
+	$AnimatedSprite2D.play("t" + str(size))
+	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	if direction == "right":
+	if direction == "r":
 		position.x += speed
 		if position.x >= 600:
-			direction = "left"
-	elif direction == "left":
+			direction = "l"
+	elif direction == "l":
 		position.x -= speed
 		if position.x <= 350:
-			direction = "right"
-	
+			direction = "r"
 
 func _on_body_entered(body):
+	if (body.name == "astrobarrierbullet"):
 		if shoot == false:
-			$AnimatedSprite2D.play("astroalvo2")
+			$AnimatedSprite2D.play("t" + str(size) + '_sh')
 			$barrierhit.play()
 			body.queue_free()
 			speed = 0
@@ -28,5 +31,10 @@ func _on_body_entered(body):
 			Astrobarrierplayer.points += 10
 		else:
 			body.queue_free()
-		
-		
+
+
+func _on_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+		if direction == "l":
+			direction = 'r'
+		else:
+			direction = 'l'

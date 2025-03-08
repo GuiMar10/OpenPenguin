@@ -1,0 +1,83 @@
+[gd_scene load_steps=11 format=3 uid="uid://dx6rdux1np8m4"]
+
+[ext_resource type="Script" uid="uid://b2itsmjjsrqm" path="res://minigames/astro barrier/objects/target.gd" id="1_tbvok"]
+[ext_resource type="Texture2D" uid="uid://bu6n5jwfoxv7a" path="res://minigames/astro barrier/assets/shapes/88.png" id="2_j4pv2"]
+[ext_resource type="Texture2D" uid="uid://c4hnsin5j275f" path="res://minigames/astro barrier/assets/shapes/89.png" id="3_j0rgl"]
+[ext_resource type="Texture2D" uid="uid://dg8ye42a8ebro" path="res://minigames/astro barrier/assets/shapes/32.png" id="4_fnxwk"]
+[ext_resource type="Texture2D" uid="uid://c21x08lb4n82w" path="res://minigames/astro barrier/assets/shapes/33.png" id="5_po2wv"]
+[ext_resource type="Texture2D" uid="uid://d138e06kab0vu" path="res://minigames/astro barrier/assets/shapes/84.png" id="6_3u3k1"]
+[ext_resource type="Texture2D" uid="uid://bucaiorprve8q" path="res://minigames/astro barrier/assets/shapes/85.png" id="7_umsyr"]
+[ext_resource type="AudioStream" uid="uid://ooivm8s2xv03" path="res://minigames/astro barrier/assets/sounds/12_sound_barrierHit.mp3" id="8_dowlm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_37r1y"]
+size = Vector2(55.6291, 55.6291)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qdj6o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_j4pv2")
+}],
+"loop": true,
+"name": &"t1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_j0rgl")
+}],
+"loop": true,
+"name": &"t1_sh",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_fnxwk")
+}],
+"loop": true,
+"name": &"t2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_po2wv")
+}],
+"loop": true,
+"name": &"t2_sh",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_3u3k1")
+}],
+"loop": true,
+"name": &"t3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_umsyr")
+}],
+"loop": true,
+"name": &"t3_sh",
+"speed": 5.0
+}]
+
+[node name="target" type="Area2D"]
+scale = Vector2(0.755, 0.755)
+script = ExtResource("1_tbvok")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.97366e-06, 2.01314e-06)
+shape = SubResource("RectangleShape2D_37r1y")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.58, 0.58)
+sprite_frames = SubResource("SpriteFrames_qdj6o")
+animation = &"t2"
+
+[node name="barrierhit" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_dowlm")
+
+[connection signal="area_shape_entered" from="." to="." method="_on_area_shape_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

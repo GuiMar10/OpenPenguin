@@ -1,16 +1,12 @@
-[gd_scene load_steps=12 format=3 uid="uid://dddycftmo1l26"]
+[gd_scene load_steps=8 format=3 uid="uid://dddycftmo1l26"]
 
 [ext_resource type="PackedScene" uid="uid://k1v6cv4en1ab" path="res://minigames/astro barrier/scenes/background.tscn" id="1_qaxca"]
 [ext_resource type="PackedScene" uid="uid://dkr37jheu3wbl" path="res://minigames/astro barrier/objects/astrobarrierplayer.tscn" id="3_mgqu6"]
 [ext_resource type="Texture2D" uid="uid://bk06gimbrkp1d" path="res://minigames/astro barrier/assets/shapes/31.png" id="4_rsb2d"]
 [ext_resource type="PackedScene" uid="uid://ddhrheji4qsug" path="res://minigames/astro barrier/objects/astrobarriercollision.tscn" id="7_ypx4x"]
-[ext_resource type="PackedScene" uid="uid://dx6rdux1np8m4" path="res://minigames/astro barrier/objects/astrobarrieralvo.tscn" id="8_6mc4k"]
+[ext_resource type="PackedScene" uid="uid://dx6rdux1np8m4" path="res://minigames/astro barrier/objects/target.tscn" id="8_6mc4k"]
 [ext_resource type="Texture2D" uid="uid://d0n7h4pmt0640" path="res://minigames/astro barrier/assets/shapes/92.png" id="15_2n8pj"]
-[ext_resource type="PackedScene" uid="uid://bekjrr5m64ens" path="res://minigames/astro barrier/objects/astrobarrieralvo3.tscn" id="15_kcugm"]
-[ext_resource type="Script" uid="uid://sgrquo1suocg" path="res://minigames/astro barrier/objects/astrobarrieralvo3number1level4.gd" id="16_1clsi"]
-[ext_resource type="Texture2D" uid="uid://dwpfpal0ceukm" path="res://minigames/astro barrier/assets/shapes/80.png" id="18_adjkj"]
-[ext_resource type="Script" uid="uid://b8f2vso2q7231" path="res://minigames/astro barrier/objects/astrobarrieralvo3number2level4.gd" id="18_sdq4o"]
-[ext_resource type="PackedScene" uid="uid://dubfc0hofk66x" path="res://minigames/astro barrier/objects/astrobarrierblock.tscn" id="20_gxvfa"]
+[ext_resource type="PackedScene" uid="uid://dubfc0hofk66x" path="res://minigames/astro barrier/objects/block.tscn" id="20_gxvfa"]
 
 [node name="astrogame1" type="Node2D"]
 
@@ -36,7 +32,6 @@ position = Vector2(637, 460)
 
 [node name="astrobarrieralvo4" parent="." instance=ExtResource("8_6mc4k")]
 position = Vector2(503, 333)
-scale = Vector2(0.869, 0.869)
 
 [node name="93" type="Sprite2D" parent="."]
 position = Vector2(527, 136)
@@ -48,32 +43,18 @@ position = Vector2(415, 251)
 scale = Vector2(0.415, 0.415)
 texture = ExtResource("15_2n8pj")
 
-[node name="astrobarrieralvo2" parent="." instance=ExtResource("15_kcugm")]
-position = Vector2(568, 135)
-scale = Vector2(0.783, 0.783)
-script = ExtResource("16_1clsi")
+[node name="block" parent="." instance=ExtResource("20_gxvfa")]
+position = Vector2(538.39, 250)
+scale = Vector2(0.419, 0.419)
 
-[node name="astrobarrieralvo3" parent="." instance=ExtResource("15_kcugm")]
-position = Vector2(412, 251)
-scale = Vector2(0.783, 0.783)
-script = ExtResource("18_sdq4o")
+[node name="block2" parent="." instance=ExtResource("20_gxvfa")]
+position = Vector2(403.38, 135.07)
+scale = Vector2(0.419, 0.419)
 
-[node name="80" type="Sprite2D" parent="."]
-position = Vector2(403, 135)
-scale = Vector2(0.424, 0.424)
-texture = ExtResource("18_adjkj")
+[node name="target" parent="." instance=ExtResource("8_6mc4k")]
+position = Vector2(441, 251)
+size = 1
 
-[node name="81" type="Sprite2D" parent="."]
-position = Vector2(539, 250)
-scale = Vector2(0.424, 0.424)
-texture = ExtResource("18_adjkj")
-
-[node name="astrobarrierblock" parent="." instance=ExtResource("20_gxvfa")]
-visible = false
-position = Vector2(539, 250)
-scale = Vector2(0.384, 0.384)
-
-[node name="astrobarrierblock2" parent="." instance=ExtResource("20_gxvfa")]
-visible = false
-position = Vector2(403, 134)
-scale = Vector2(0.384, 0.384)
+[node name="target2" parent="." instance=ExtResource("8_6mc4k")]
+position = Vector2(507, 136)
+size = 1

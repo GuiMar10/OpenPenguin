@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://do0aaqycbhrha"]
+
+[ext_resource type="PackedScene" uid="uid://dx6rdux1np8m4" path="res://minigames/astro barrier/objects/target.tscn" id="1_uges0"]
+[ext_resource type="PackedScene" uid="uid://dubfc0hofk66x" path="res://minigames/astro barrier/objects/block.tscn" id="2_hovn5"]
+
+[node name="Test" type="Node2D"]
+
+[node name="astrobarrieralvo" parent="." instance=ExtResource("1_uges0")]
+position = Vector2(399, 234)
+
+[node name="block" parent="." instance=ExtResource("2_hovn5")]
+position = Vector2(545, 238)
+
+[connection signal="area_shape_entered" from="astrobarrieralvo" to="astrobarrieralvo" method="_on_area_shape_entered"]
