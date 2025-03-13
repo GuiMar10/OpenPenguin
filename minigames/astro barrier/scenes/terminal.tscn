@@ -204,8 +204,9 @@ func _physics_process(delta: float) -> void:
 				get_parent().add_child(orange_instance)
 			\"orange_block\":
 				var orange_block_instance = OrangeBlockScene.instantiate()
+				orange_block_instance.scale = Vector2(0.65, 0.65)
 				# Offset the y-position by 28 as before
-				orange_block_instance.position = clamped_pos + Vector2(0, 28)
+				orange_block_instance.position = clamped_pos + Vector2(0, 22)
 				get_parent().add_child(orange_block_instance)
 
 # Signal handlers to change the tool via UI buttons or similar
