@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://qdw5ytfdlkhv"]
+
+[ext_resource type="Texture2D" uid="uid://bq3juugy64l7q" path="res://rooms/cofffee_shop/Coffee_Shop.webp" id="1_5o4sf"]
+[ext_resource type="Texture2D" uid="uid://bpb8pqn7a5r16" path="res://rooms/cofffee_shop/sprites/DefineSprite_84/1.png" id="2_5suae"]
+
+[node name="Coffee" type="Node2D"]
+
+[node name="1" type="Sprite2D" parent="."]
+position = Vector2(487.819, 287.5)
+scale = Vector2(1.2485, 1.2485)
+texture = ExtResource("2_5suae")
+
+[node name="CoffeeShop" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.533333)
+position = Vector2(478.956, 301.688)
+scale = Vector2(0.430556, 0.430556)
+texture = ExtResource("1_5o4sf")

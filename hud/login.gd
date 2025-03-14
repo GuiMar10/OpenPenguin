@@ -1,6 +1,6 @@
 extends VBoxContainer
 
-var strings = [{"name": "Astro Barrier", "location": "res://minigames/astro barrier/scenes/astrogamestart.tscn"}, {"name": "Thin Ice", 'location': "res://minigames/thin ice/thin1.tscn"}, {"name": "Town", "location": "res://rooms/town/towncenter.tscn"}]
+var strings = [{"name": "Astro Barrier", "location": "res://minigames/astro barrier/scenes/astrogamestart.tscn"}, {"name": "Thin Ice", 'location': "res://minigames/thin ice/thin1.tscn"}, {"name": "Town", "location": "res://rooms/town/towncenter.tscn"}, {"name": "OG Town", "location": "res://rooms/town/old/towncenter.tscn"}]
 	
 func _ready():
 	for text in strings:

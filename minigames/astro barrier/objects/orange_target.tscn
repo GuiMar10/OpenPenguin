@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cwuuwch6anfpr" path="res://minigames/astro barrier/assets/shapes/132.svg" id="2_d8eck"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hymjf"]
-size = Vector2(32, 33)
+size = Vector2(32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_xggek"]
 animations = [{
@@ -21,7 +21,6 @@ animations = [{
 script = ExtResource("1_d8eck")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_hymjf")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
