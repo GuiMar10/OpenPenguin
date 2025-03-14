@@ -2,6 +2,9 @@
 
 Snowball Engine is a fancy name for how we recreate Club Penguin's rooms in Godot. Converting rooms is a manual and slow process, so here is a guide on how to make it a little less painfull ;)
 
+0. Download your room
+Download the room's Flash File. We highly recommend using [The Club Penguin Rewritten Archives](https://rewrittenarchives.fandom.com/wiki/Main_Page)
+
 1. Use JPEXS Free Flash Decompiler
 
 You can download it [here](https://github.com/jindrapetrik/jpexs-decompiler)
