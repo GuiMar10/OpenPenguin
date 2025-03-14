@@ -1,7 +1,7 @@
 # OpenPenguin: Club Penguin remade and open-sourced
 This project is kinda dead, but feel free to add some of your rooms and minigames!
 ### Rooms
-- [x] Town
+- [x] Town (new and old)
 
 ### Minigames
 - [x] Astro Barrier + level editor (first 4 levels)
