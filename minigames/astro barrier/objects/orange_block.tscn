@@ -103,6 +103,7 @@ shape = SubResource("RectangleShape2D_hymjf")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_xggek")
+animation = &"destroy"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="animation_changed" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_changed"]

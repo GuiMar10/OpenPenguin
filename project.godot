@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Astrobarrierplayer="*res://minigames/astro barrier/objects/player.gd"
 Load="*res://hud/load.gd"
+LoadS="*res://hud/load.tscn"
 
 [display]
 
