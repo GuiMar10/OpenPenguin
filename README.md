@@ -1,8 +1,9 @@
 # OpenPenguin: Club Penguin remade and open-sourced
 This project is kinda dead, but feel free to add some of your rooms and minigames!
 ### Rooms
-- [x] Town (AS1, AS2, AS3)
+- [x] Town (AS1/AS2, AS3)
 - [x] Coffee Shop (AS2)
+- [ ] Box Dimension (under development)
 
 ### Minigames
 - [x] Astro Barrier + level editor (first 4 levels)
