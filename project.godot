@@ -39,6 +39,7 @@ space={
 locale/translation_remaps={
 "res://hud/password_secret/en.png": PackedStringArray("res://hud/password_secret/es.png:es", "res://hud/password_secret/pt.png:pt"),
 "res://minigames/thin ice/assets/titles/en.png": PackedStringArray("res://minigames/thin ice/assets/titles/pt.png:pt", "res://minigames/thin ice/assets/titles/es.png:es"),
+"res://rooms/cofffee_shop/sprites/DefineSprite_17/en.png": PackedStringArray("res://rooms/cofffee_shop/sprites/DefineSprite_17/pt.png:pt"),
 "res://rooms/town/assets/sprites/DefineSprite_292/1.png": PackedStringArray("res://rooms/town/assets/sprites/DefineSprite_294/1.png:pt", "res://rooms/town/assets/sprites/DefineSprite_298/1.png:es"),
 "res://rooms/town/assets/sprites/DefineSprite_303/1.png": PackedStringArray("res://rooms/town/assets/sprites/DefineSprite_305/1.png:pt", "res://rooms/town/assets/sprites/DefineSprite_309/1.png:es"),
 "res://rooms/town/assets/sprites/DefineSprite_314/1.png": PackedStringArray("res://rooms/town/assets/sprites/DefineSprite_316/1.png:pt", "res://rooms/town/assets/sprites/DefineSprite_319/1.png:es"),
