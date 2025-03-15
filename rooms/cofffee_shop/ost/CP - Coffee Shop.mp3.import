@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://2jbk4qkv0414"
+path="res://.godot/imported/CP - Coffee Shop.mp3-704d942a2c6af4bb120c9f6e12861b2a.mp3str"
+
+[deps]
+
+source_file="res://rooms/cofffee_shop/ost/CP - Coffee Shop.mp3"
+dest_files=["res://.godot/imported/CP - Coffee Shop.mp3-704d942a2c6af4bb120c9f6e12861b2a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
