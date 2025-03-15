@@ -28,3 +28,6 @@ This is the most _painful_ part. Export each sprite you want to put inside your 
 ![image](https://github.com/user-attachments/assets/cb783454-97f3-42d7-86c7-9b0749a12f67)
 
 **Tip:** Adjust the frame's opacity to help you visualize if you're placing the object in the right position.
+
+### Soundtracking the room
+We reccomend downloading soundtracks from [Club Penguin Music Station](https://www.youtube.com/@clubpenguinmusicstation).
